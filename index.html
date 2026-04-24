@@ -1,0 +1,2952 @@
+<!DOCTYPE html>
+<html lang="fr" data-lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ============================================================
+     META & SEO
+     ============================================================ -->
+<title data-i18n="meta.title">CertTrack — Le pilotage intelligent des certifications halal, bio & éthiques · EthicalDataBoost</title>
+<meta name="description" data-i18n="meta.description" content="Dans un marché éthique fragilisé par la fraude et la défiance, la certification valide est votre seul argument incontestable. CertTrack surveille, alerte, documente et rend vérifiable chaque certification par QR code." />
+<meta name="author" content="EthicalDataBoost" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#0b2218" />
+<link rel="canonical" href="https://certtrack.ethicaldataboost.com/" />
+<link rel="alternate" hreflang="fr" href="https://certtrack.ethicaldataboost.com/?lang=fr" />
+<link rel="alternate" hreflang="en" href="https://certtrack.ethicaldataboost.com/?lang=en" />
+<link rel="alternate" hreflang="x-default" href="https://certtrack.ethicaldataboost.com/" />
+
+<!-- Favicon — EthicalDataBoost logo (tree circuit) -->
+<link rel="icon" type="image/jpeg" href="data:image/jpeg;base64,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" />
+<link rel="apple-touch-icon" href="data:image/jpeg;base64,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" />
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://certtrack.ethicaldataboost.com/" />
+<meta property="og:title" content="CertTrack — Le pilotage intelligent des certifications halal, bio & éthiques" />
+<meta property="og:description" content="Surveillance automatisée, alertes multicanales, QR code de vérification consommateur. Livré en 4 jours, sans installation." />
+<meta property="og:image" content="https://certtrack.ethicaldataboost.com/og-certtrack.jpg" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:site_name" content="CertTrack by EthicalDataBoost" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="CertTrack — Certifications halal, bio & éthiques sous contrôle" />
+<meta name="twitter:description" content="Ne laissez plus une certification vous surprendre. Audit gratuit 20 min." />
+
+<!-- Schema.org — Service + LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "CertTrack",
+      "serviceType": "Certification monitoring & compliance SaaS",
+      "description": "Service B2B de surveillance automatisée des certifications halal, bio, vegan, naturel et éthiques. Alertes prédictives, rapport de conformité, QR code de vérification consommateur.",
+      "provider": {
+        "@type": "Organization",
+        "name": "EthicalDataBoost",
+        "url": "https://ethicaldataboost.netlify.app",
+        "email": "contact.ethicaldataboost@gmail.com"
+      },
+      "areaServed": ["FR", "International"],
+      "inLanguage": ["fr-FR", "en-US"]
+    },
+    {
+      "@type": "LocalBusiness",
+      "name": "EthicalDataBoost",
+      "image": "https://certtrack.ethicaldataboost.com/og-certtrack.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "88 rue de Stalingrad",
+        "addressRegion": "Yvelines",
+        "addressCountry": "FR"
+      },
+      "email": "contact.ethicaldataboost@gmail.com"
+    }
+  ]
+}
+</script>
+
+<!-- ============================================================
+     GOOGLE TAG MANAGER
+     ============================================================ -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T87PC6C3');</script>
+
+<!-- GA4 direct (redundant safety — GTM already fires GA4 config) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L5WX1QW4R8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L5WX1QW4R8', { 'anonymize_ip': true });
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   CSS VARIABLES — palette EDB
+   ============================================================ */
+:root {
+  --forest-900: #051811;
+  --forest-800: #0b2218;
+  --forest-700: #13331f;
+  --forest-600: #1e4a32;
+  --forest-500: #2d5e45;
+  --gold-400: #d4b34a;
+  --gold-500: #B8972A;
+  --gold-600: #8f7420;
+  --terra-400: #d4926e;
+  --terra-500: #C07B5B;
+  --terra-600: #a0604a;
+  --cream-50: #FFFCF6;
+  --cream-100: #FAF6EF;
+  --cream-200: #F0EADF;
+  --cream-300: #E3DBCC;
+  --cream-400: #C4BBA7;
+  --ink-900: #1a1914;
+  --ink-700: #3E3C34;
+  --ink-500: #6b6758;
+  --ink-400: #8b8676;
+
+  --shadow-sm: 0 1px 2px rgba(11, 34, 24, 0.06);
+  --shadow-md: 0 4px 16px -4px rgba(11, 34, 24, 0.12);
+  --shadow-lg: 0 12px 40px -8px rgba(11, 34, 24, 0.18);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--ink-700);
+  background: var(--cream-100);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--forest-800);
+  line-height: 1.1;
+}
+
+h1 { font-size: clamp(2.2rem, 4.5vw, 3.8rem); }
+h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
+h3 { font-size: clamp(1.3rem, 2.2vw, 1.7rem); }
+h4 { font-size: 1.1rem; }
+
+p { font-size: 1rem; line-height: 1.7; }
+.large { font-size: 1.15rem; line-height: 1.6; }
+.small { font-size: 0.9rem; }
+.micro { font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; font-family: 'JetBrains Mono', monospace; }
+
+a { color: inherit; text-decoration: none; transition: color 0.2s; }
+
+em.serif { font-style: italic; font-weight: 500; color: var(--gold-500); }
+em.terra { font-style: italic; font-weight: 500; color: var(--terra-500); }
+
+/* Subtle grain */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.025;
+  z-index: 1;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' /%3E%3C/svg%3E");
+}
+
+/* ============================================================
+   READING PROGRESS BAR
+   ============================================================ */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold-500), var(--terra-500));
+  width: 0%;
+  z-index: 9999;
+  transition: width 0.1s linear;
+}
+
+/* ============================================================
+   CONTAINER & LAYOUT
+   ============================================================ */
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.container-narrow {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  padding: clamp(3.5rem, 7vw, 6rem) 0;
+  position: relative;
+}
+
+/* ============================================================
+   ANNOUNCEMENT BAR
+   ============================================================ */
+.announce-bar {
+  background: var(--forest-900);
+  color: var(--cream-100);
+  padding: 0.55rem 1rem;
+  text-align: center;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  position: relative;
+  z-index: 40;
+}
+.announce-bar strong { color: var(--gold-400); font-weight: 500; }
+.announce-bar .dot {
+  display: inline-block;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--gold-500);
+  margin: 0 0.6rem;
+  vertical-align: middle;
+}
+
+/* ============================================================
+   NAVIGATION
+   ============================================================ */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: rgba(250, 246, 239, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--cream-300);
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  max-width: 1180px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex-shrink: 0;
+}
+.nav-logo svg { width: 40px; height: 40px; border-radius: 7px; overflow: hidden; }
+.nav-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.nav-brand-name {
+  font-family: 'Fraunces', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--forest-800);
+  letter-spacing: -0.01em;
+}
+.nav-brand-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-500);
+  margin-top: 0.25rem;
+}
+.nav-links {
+  display: flex;
+  gap: 1.8rem;
+  font-size: 0.92rem;
+  color: var(--ink-700);
+}
+.nav-links a:hover { color: var(--gold-600); }
+.nav-ctas {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.78rem 1.4rem;
+  border-radius: 999px;
+  font-size: 0.94rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  border: none;
+  white-space: nowrap;
+  font-family: inherit;
+}
+.btn-primary {
+  background: var(--forest-800);
+  color: var(--cream-100);
+}
+.btn-primary:hover {
+  background: var(--gold-500);
+  color: var(--forest-900);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+.btn-gold {
+  background: var(--gold-500);
+  color: var(--forest-900);
+  font-weight: 600;
+}
+.btn-gold:hover {
+  background: var(--gold-400);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+.btn-ghost {
+  border: 1px solid var(--forest-800);
+  color: var(--forest-800);
+  background: transparent;
+}
+.btn-ghost:hover {
+  background: var(--forest-800);
+  color: var(--cream-100);
+}
+.btn-outline-cream {
+  border: 1px solid var(--cream-300);
+  color: var(--forest-800);
+  background: transparent;
+}
+.btn-outline-cream:hover {
+  background: var(--cream-200);
+  border-color: var(--forest-800);
+}
+
+.lang-toggle {
+  display: inline-flex;
+  border: 1px solid var(--cream-300);
+  border-radius: 999px;
+  overflow: hidden;
+  font-size: 0.78rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+.lang-toggle button {
+  background: transparent;
+  border: none;
+  padding: 0.45rem 0.8rem;
+  cursor: pointer;
+  color: var(--ink-500);
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: 0.05em;
+  transition: all 0.2s;
+}
+.lang-toggle button.active {
+  background: var(--forest-800);
+  color: var(--cream-100);
+}
+
+.mobile-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: var(--forest-800);
+}
+
+@media (max-width: 960px) {
+  .nav-links { display: none; }
+  .nav-ctas .btn-ghost { display: none; }
+  .mobile-toggle { display: block; }
+}
+
+/* ============================================================
+   HERO — split 60/40
+   ============================================================ */
+.hero {
+  background: linear-gradient(180deg, var(--cream-100) 0%, var(--cream-200) 100%);
+  padding: clamp(4rem, 8vw, 7rem) 0 clamp(3rem, 6vw, 5rem);
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 60%;
+  height: 120%;
+  background: radial-gradient(ellipse at center, rgba(184, 151, 42, 0.08), transparent 70%);
+  pointer-events: none;
+}
+
+.hero-split {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 960px) {
+  .hero-split { grid-template-columns: 1fr; }
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.4rem 0.9rem;
+  background: rgba(184, 151, 42, 0.1);
+  border: 1px solid rgba(184, 151, 42, 0.3);
+  border-radius: 999px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-600);
+  margin-bottom: 1.5rem;
+}
+.hero-eyebrow .pulse {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--gold-500);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.6; transform: scale(0.8); } }
+
+.hero-title {
+  font-size: clamp(2.2rem, 4.8vw, 4rem);
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.025em;
+}
+.hero-subtitle {
+  font-size: 1.12rem;
+  line-height: 1.6;
+  color: var(--ink-700);
+  margin-bottom: 2rem;
+  max-width: 580px;
+}
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-bottom: 2rem;
+}
+.hero-proof {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--cream-300);
+  font-size: 0.88rem;
+  color: var(--ink-500);
+}
+
+/* Calculator panel (right side) */
+.calc-panel {
+  background: var(--forest-800);
+  color: var(--cream-100);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 24px 60px -12px rgba(11, 34, 24, 0.35);
+  position: relative;
+}
+.calc-panel h3 {
+  color: var(--cream-100);
+  font-size: 1.35rem;
+  margin-bottom: 0.4rem;
+}
+.calc-panel .calc-sub {
+  font-size: 0.88rem;
+  color: rgba(250, 246, 239, 0.65);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+.calc-field {
+  margin-bottom: 1rem;
+}
+.calc-field label {
+  display: block;
+  font-size: 0.74rem;
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(250, 246, 239, 0.55);
+  margin-bottom: 0.45rem;
+}
+.calc-field input,
+.calc-field select {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  background: rgba(250, 246, 239, 0.06);
+  border: 1px solid rgba(250, 246, 239, 0.15);
+  border-radius: 10px;
+  color: var(--cream-50);
+  font-size: 0.98rem;
+  font-family: inherit;
+  transition: border 0.2s;
+}
+.calc-field input:focus,
+.calc-field select:focus {
+  outline: none;
+  border-color: var(--gold-500);
+  box-shadow: 0 0 0 3px rgba(184, 151, 42, 0.15);
+}
+.calc-field select option {
+  background: var(--forest-800);
+  color: var(--cream-100);
+}
+
+.calc-result {
+  margin-top: 1.3rem;
+  padding: 1.1rem 1.2rem;
+  background: rgba(192, 123, 91, 0.12);
+  border: 1px solid rgba(192, 123, 91, 0.35);
+  border-radius: 14px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.calc-result-label {
+  font-size: 0.8rem;
+  color: rgba(250, 246, 239, 0.7);
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.calc-result-value {
+  font-family: 'Fraunces', serif;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: var(--terra-400);
+  letter-spacing: -0.01em;
+}
+
+/* ============================================================
+   TRUST CRISIS STRIP
+   ============================================================ */
+.crisis-strip {
+  background: var(--forest-800);
+  color: var(--cream-100);
+  padding: 3rem 0;
+}
+.crisis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.crisis-stat {
+  text-align: left;
+}
+.crisis-stat .num {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 600;
+  color: var(--gold-400);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+.crisis-stat .label {
+  font-size: 0.95rem;
+  color: rgba(250, 246, 239, 0.85);
+  line-height: 1.5;
+}
+.crisis-stat .source {
+  font-size: 0.72rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: rgba(250, 246, 239, 0.45);
+  margin-top: 0.5rem;
+}
+
+/* ============================================================
+   SECTION HEADERS
+   ============================================================ */
+.section-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--gold-600);
+  margin-bottom: 1rem;
+}
+.section-title {
+  margin-bottom: 1rem;
+  max-width: 720px;
+}
+.section-lead {
+  font-size: 1.1rem;
+  color: var(--ink-700);
+  max-width: 680px;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+/* ============================================================
+   COST BREAKDOWN — 4 postes
+   ============================================================ */
+.costs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+.cost-card {
+  background: var(--cream-50);
+  border: 1px solid var(--cream-300);
+  border-radius: 18px;
+  padding: 1.8rem;
+  transition: all 0.3s;
+}
+.cost-card:hover {
+  border-color: var(--gold-500);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+.cost-card .num {
+  font-family: 'Fraunces', serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--terra-500);
+  line-height: 1;
+  margin-bottom: 0.8rem;
+}
+.cost-card h4 {
+  margin-bottom: 0.6rem;
+  font-size: 1.15rem;
+}
+.cost-card p {
+  font-size: 0.95rem;
+  color: var(--ink-700);
+  line-height: 1.55;
+}
+
+/* ============================================================
+   SOLUTION — 2 protocoles
+   ============================================================ */
+.protocols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+@media (max-width: 800px) {
+  .protocols { grid-template-columns: 1fr; }
+}
+.protocol-card {
+  background: var(--cream-50);
+  border: 1px solid var(--cream-300);
+  border-radius: 24px;
+  padding: 2.2rem;
+  position: relative;
+  overflow: hidden;
+}
+.protocol-card.dark {
+  background: var(--forest-800);
+  color: var(--cream-100);
+  border: none;
+}
+.protocol-card.dark h3 { color: var(--cream-50); }
+.protocol-card.dark p { color: rgba(250, 246, 239, 0.85); }
+.protocol-badge {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  background: rgba(184, 151, 42, 0.15);
+  color: var(--gold-600);
+  border-radius: 999px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.2rem;
+}
+.dark .protocol-badge {
+  background: rgba(212, 179, 74, 0.15);
+  color: var(--gold-400);
+}
+.protocol-card h3 {
+  margin-bottom: 1rem;
+}
+.protocol-card ul {
+  list-style: none;
+  margin-top: 1.2rem;
+}
+.protocol-card li {
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  position: relative;
+  font-size: 0.97rem;
+  line-height: 1.5;
+}
+.protocol-card li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--gold-500);
+  font-weight: 600;
+}
+.dark .protocol-card li::before { color: var(--gold-400); }
+
+/* ============================================================
+   DASHBOARD MOCKUP
+   ============================================================ */
+.dashboard-mock {
+  background: var(--cream-50);
+  border-radius: 18px;
+  box-shadow: 0 24px 60px -12px rgba(11, 34, 24, 0.25);
+  overflow: hidden;
+  margin-top: 2rem;
+  border: 1px solid var(--cream-300);
+}
+.mock-topbar {
+  background: linear-gradient(90deg, var(--forest-800), var(--forest-700));
+  color: var(--cream-100);
+  padding: 0.9rem 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.88rem;
+}
+.mock-topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.mock-dots { display: flex; gap: 0.3rem; }
+.mock-dots span {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: rgba(250, 246, 239, 0.2);
+}
+.mock-topbar-right {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: rgba(250, 246, 239, 0.65);
+  letter-spacing: 0.08em;
+}
+.mock-body {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 0;
+}
+@media (max-width: 800px) {
+  .mock-body { grid-template-columns: 1fr; }
+}
+.mock-left { padding: 1.5rem; }
+.mock-right {
+  padding: 1.5rem;
+  background: var(--cream-100);
+  border-left: 1px solid var(--cream-300);
+}
+.mock-kpis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.mock-kpi {
+  padding: 0.9rem;
+  background: var(--cream-100);
+  border-radius: 10px;
+  text-align: center;
+}
+.mock-kpi .big {
+  font-family: 'Fraunces', serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--forest-800);
+  line-height: 1;
+}
+.mock-kpi .lbl {
+  font-size: 0.7rem;
+  color: var(--ink-500);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 0.4rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+.mock-kpi.alert .big { color: var(--terra-500); }
+.mock-certlist { display: flex; flex-direction: column; gap: 0.5rem; }
+.mock-cert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  background: var(--cream-100);
+  border-radius: 10px;
+  border-left: 3px solid var(--forest-500);
+}
+.mock-cert.warn { border-left-color: var(--gold-500); background: rgba(184, 151, 42, 0.06); }
+.mock-cert.danger { border-left-color: var(--terra-500); background: rgba(192, 123, 91, 0.08); }
+.mock-cert-info { display: flex; flex-direction: column; gap: 0.15rem; }
+.mock-cert-name { font-weight: 500; font-size: 0.92rem; color: var(--forest-800); }
+.mock-cert-meta { font-size: 0.72rem; color: var(--ink-500); font-family: 'JetBrains Mono', monospace; }
+.mock-cert-badge {
+  font-size: 0.7rem;
+  font-family: 'JetBrains Mono', monospace;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-weight: 500;
+}
+.mock-cert .green-badge { background: rgba(45, 94, 69, 0.15); color: var(--forest-600); }
+.mock-cert .warn-badge { background: rgba(184, 151, 42, 0.2); color: var(--gold-600); }
+.mock-cert .danger-badge { background: rgba(192, 123, 91, 0.2); color: var(--terra-600); }
+
+.mock-qr-block {
+  text-align: center;
+}
+.mock-qr-title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.05rem;
+  color: var(--forest-800);
+  margin-bottom: 0.2rem;
+}
+.mock-qr-sub {
+  font-size: 0.78rem;
+  color: var(--ink-500);
+  margin-bottom: 1rem;
+}
+.mock-qr-svg {
+  display: block;
+  margin: 0 auto 0.8rem;
+  width: 130px;
+  height: 130px;
+  border-radius: 12px;
+  background: var(--cream-50);
+  padding: 10px;
+  border: 1px solid var(--cream-300);
+}
+.mock-qr-caption {
+  font-size: 0.72rem;
+  color: var(--ink-500);
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   PROCESS — 4 jours
+   ============================================================ */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  position: relative;
+}
+@media (max-width: 800px) {
+  .process-grid { grid-template-columns: 1fr; }
+}
+.process-step {
+  position: relative;
+}
+.process-num {
+  font-family: 'Fraunces', serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--gold-500);
+  line-height: 1;
+  margin-bottom: 0.8rem;
+  font-style: italic;
+}
+.process-step h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+.process-step p {
+  font-size: 0.95rem;
+  color: var(--ink-700);
+}
+
+/* ============================================================
+   CERTIFICATIONS GRID
+   ============================================================ */
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+.cert-chip {
+  padding: 1rem 1.1rem;
+  background: var(--cream-50);
+  border: 1px solid var(--cream-300);
+  border-radius: 12px;
+  transition: all 0.25s;
+}
+.cert-chip:hover {
+  border-color: var(--gold-500);
+  background: rgba(184, 151, 42, 0.04);
+}
+.cert-chip .cat {
+  font-size: 0.66rem;
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-500);
+  margin-bottom: 0.3rem;
+}
+.cert-chip .name {
+  font-family: 'Fraunces', serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--forest-800);
+  line-height: 1.25;
+}
+
+/* ============================================================
+   REGULATION CARDS
+   ============================================================ */
+.regs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+.reg-card {
+  background: var(--cream-50);
+  border: 1px solid var(--cream-300);
+  border-radius: 18px;
+  padding: 1.6rem;
+  border-top: 3px solid var(--forest-500);
+}
+.reg-card.urgent { border-top-color: var(--terra-500); }
+.reg-card.hot { border-top-color: var(--gold-500); }
+.reg-card .reg-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gold-600);
+  margin-bottom: 0.6rem;
+}
+.reg-card.urgent .reg-date { color: var(--terra-600); }
+.reg-card h4 {
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+}
+.reg-card p {
+  font-size: 0.92rem;
+  color: var(--ink-700);
+  line-height: 1.55;
+}
+
+/* ============================================================
+   VS EXCEL COMPARISON
+   ============================================================ */
+.excel-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+@media (max-width: 800px) {
+  .excel-compare { grid-template-columns: 1fr; }
+}
+.excel-side, .ct-side {
+  padding: 2rem;
+  border-radius: 18px;
+}
+.excel-side {
+  background: var(--cream-100);
+  border: 1px dashed var(--ink-400);
+}
+.ct-side {
+  background: var(--forest-800);
+  color: var(--cream-100);
+}
+.excel-side h4, .ct-side h4 {
+  margin-bottom: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+.ct-side h4 { color: var(--cream-50); }
+.excel-side ul, .ct-side ul {
+  list-style: none;
+}
+.excel-side li, .ct-side li {
+  padding: 0.55rem 0 0.55rem 1.8rem;
+  position: relative;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.ct-side li { border-bottom-color: rgba(250, 246, 239, 0.1); color: rgba(250, 246, 239, 0.9); }
+.excel-side li::before {
+  content: "✕";
+  position: absolute;
+  left: 0.3rem;
+  color: var(--terra-500);
+  font-weight: 600;
+}
+.ct-side li::before {
+  content: "✓";
+  position: absolute;
+  left: 0.3rem;
+  color: var(--gold-400);
+  font-weight: 600;
+}
+
+/* ============================================================
+   AVATARS
+   ============================================================ */
+.avatars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.3rem;
+  margin-top: 2rem;
+}
+@media (max-width: 900px) {
+  .avatars-grid { grid-template-columns: 1fr; }
+}
+.avatar-card {
+  background: var(--cream-50);
+  border: 1px solid var(--cream-300);
+  border-radius: 18px;
+  padding: 1.8rem;
+  position: relative;
+}
+.avatar-initials {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold-500), var(--terra-500));
+  color: var(--cream-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Fraunces', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.avatar-card h4 {
+  margin-bottom: 0.2rem;
+  font-size: 1.2rem;
+}
+.avatar-card .role {
+  font-size: 0.85rem;
+  color: var(--ink-500);
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.03em;
+  margin-bottom: 1rem;
+}
+.avatar-card .quote {
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: var(--ink-700);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+.avatar-card .certs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--cream-300);
+}
+.avatar-card .cert-tag {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.55rem;
+  background: var(--cream-200);
+  color: var(--forest-700);
+  border-radius: 999px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.avatar-card .note {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 0.72rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--terra-600);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ============================================================
+   LEAD MAGNET SECTION
+   ============================================================ */
+.lead-magnet {
+  background: linear-gradient(135deg, var(--forest-800) 0%, var(--forest-700) 100%);
+  color: var(--cream-100);
+}
+.lead-magnet .container {
+  max-width: 900px;
+}
+.magnet-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .magnet-box { grid-template-columns: 1fr; }
+}
+.magnet-text h2 { color: var(--cream-50); margin-bottom: 1rem; }
+.magnet-text p { color: rgba(250, 246, 239, 0.85); font-size: 1rem; line-height: 1.6; }
+.magnet-features {
+  list-style: none;
+  margin-top: 1.2rem;
+}
+.magnet-features li {
+  padding: 0.4rem 0 0.4rem 1.6rem;
+  position: relative;
+  font-size: 0.92rem;
+  color: rgba(250, 246, 239, 0.85);
+}
+.magnet-features li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: var(--gold-400);
+}
+
+.magnet-form {
+  background: rgba(250, 246, 239, 0.04);
+  border: 1px solid rgba(250, 246, 239, 0.12);
+  border-radius: 18px;
+  padding: 1.8rem;
+}
+.magnet-form label {
+  display: block;
+  font-size: 0.72rem;
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(250, 246, 239, 0.55);
+  margin-bottom: 0.5rem;
+}
+.magnet-form input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background: rgba(250, 246, 239, 0.08);
+  border: 1px solid rgba(250, 246, 239, 0.18);
+  border-radius: 10px;
+  color: var(--cream-50);
+  font-size: 1rem;
+  font-family: inherit;
+  margin-bottom: 1rem;
+}
+.magnet-form input:focus {
+  outline: none;
+  border-color: var(--gold-500);
+  box-shadow: 0 0 0 3px rgba(184, 151, 42, 0.15);
+}
+.magnet-form button {
+  width: 100%;
+  padding: 0.95rem;
+  background: var(--gold-500);
+  color: var(--forest-900);
+  border: none;
+  border-radius: 10px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.25s;
+}
+.magnet-form button:hover { background: var(--gold-400); }
+.magnet-form .consent {
+  font-size: 0.75rem;
+  color: rgba(250, 246, 239, 0.55);
+  line-height: 1.5;
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.magnet-form .consent input {
+  width: auto;
+  margin: 4px 0 0 0;
+  accent-color: var(--gold-500);
+}
+.magnet-success {
+  padding: 1.5rem;
+  background: rgba(184, 151, 42, 0.12);
+  border: 1px solid var(--gold-500);
+  border-radius: 12px;
+  text-align: center;
+  display: none;
+}
+.magnet-success.show { display: block; }
+.magnet-success h4 { color: var(--gold-400); margin-bottom: 0.5rem; }
+.magnet-success p { color: rgba(250, 246, 239, 0.85); font-size: 0.95rem; }
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+details.faq {
+  background: var(--cream-50);
+  border: 1px solid var(--cream-300);
+  border-radius: 14px;
+  padding: 1.2rem 1.5rem;
+  transition: all 0.25s;
+}
+details.faq[open] {
+  border-color: var(--gold-500);
+  background: rgba(184, 151, 42, 0.03);
+}
+details.faq summary {
+  cursor: pointer;
+  font-family: 'Fraunces', serif;
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: var(--forest-800);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  list-style: none;
+}
+details.faq summary::-webkit-details-marker { display: none; }
+details.faq summary::after {
+  content: "+";
+  font-size: 1.5rem;
+  color: var(--gold-500);
+  transition: transform 0.25s;
+  flex-shrink: 0;
+}
+details.faq[open] summary::after { transform: rotate(45deg); }
+details.faq p {
+  margin-top: 0.9rem;
+  color: var(--ink-700);
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+/* ============================================================
+   FINAL CTA
+   ============================================================ */
+.final-cta {
+  background: var(--forest-800);
+  color: var(--cream-100);
+  text-align: center;
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.final-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(184, 151, 42, 0.1), transparent 60%);
+  pointer-events: none;
+}
+.final-cta .container { position: relative; z-index: 2; }
+.final-cta h2 {
+  color: var(--cream-50);
+  margin-bottom: 1.5rem;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.final-cta p {
+  color: rgba(250, 246, 239, 0.8);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.final-cta-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+  background: var(--forest-900);
+  color: var(--cream-100);
+  padding: 5rem 0 2rem;
+}
+.footer-brand {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(250, 246, 239, 0.1);
+}
+.footer-logo-big {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 1.2rem;
+  display: block;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.footer-brand h3 {
+  color: var(--cream-50);
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.footer-brand .tagline {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--gold-400);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.4rem;
+}
+.footer-brand .tagline-2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: rgba(250, 246, 239, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 1.5rem;
+}
+.footer-brand .desc {
+  max-width: 540px;
+  margin: 0 auto 1.5rem;
+  color: rgba(250, 246, 239, 0.75);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.footer-brand .ctas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.footer-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 2rem;
+}
+.footer-tab {
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 1px solid rgba(250, 246, 239, 0.15);
+  color: rgba(250, 246, 239, 0.7);
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: all 0.25s;
+}
+.footer-tab.active {
+  background: var(--gold-500);
+  color: var(--forest-900);
+  border-color: var(--gold-500);
+}
+.footer-tab:hover:not(.active) { border-color: var(--gold-500); color: var(--gold-400); }
+
+.footer-panel {
+  display: none;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(250, 246, 239, 0.04);
+  border: 1px solid rgba(250, 246, 239, 0.1);
+  border-radius: 16px;
+  font-size: 0.9rem;
+  color: rgba(250, 246, 239, 0.85);
+  line-height: 1.7;
+}
+.footer-panel.active { display: block; }
+.footer-panel h4 {
+  color: var(--gold-400);
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+}
+.footer-panel a { color: var(--gold-400); border-bottom: 1px dotted rgba(212, 179, 74, 0.4); }
+.footer-panel a:hover { border-bottom-color: var(--gold-400); color: var(--gold-500); }
+.footer-panel p { font-size: 0.9rem; margin-bottom: 0.7rem; }
+.footer-panel ul { list-style: none; margin-top: 0.5rem; }
+.footer-panel li { padding: 0.25rem 0; }
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(250, 246, 239, 0.08);
+  font-size: 0.78rem;
+  color: rgba(250, 246, 239, 0.4);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Back to top */
+#back-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--forest-800);
+  color: var(--cream-100);
+  border: none;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  box-shadow: var(--shadow-lg);
+  transition: all 0.25s;
+}
+#back-top.show { display: flex; }
+#back-top:hover { background: var(--gold-500); color: var(--forest-900); }
+
+/* Mobile nav */
+#mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100vh;
+  background: var(--cream-100);
+  z-index: 50;
+  padding: 5rem 2rem 2rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+#mobile-nav.open { display: flex; }
+#mobile-nav a {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--cream-300);
+  font-size: 1.15rem;
+  font-family: 'Fraunces', serif;
+  color: var(--forest-800);
+}
+#mobile-nav .mobile-cta {
+  margin-top: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  background: var(--forest-800);
+  color: var(--cream-100);
+  border-radius: 999px;
+  font-weight: 500;
+}
+#mobile-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--forest-800);
+}
+</style>
+</head>
+
+<body>
+
+<!-- Hidden SVG symbol — logo embedded once, referenced everywhere via <use> -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="edb-logo-symbol" viewBox="0 0 256 256">
+    <image width="256" height="256" href="data:image/jpeg;base64,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iAiIgIiICIiAiIgIiICIiApa6Yjt1d4F+sT/AIMiiVS90twum6vsFaxpcW1r3nb7hBISrPVnrh6m29vV1noA2/8Ast/64o1E6lfqYlbN1cZ89vgXPs/aIox/4UUJfS+iIiiCIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiArFdEtlfdOrS31vp90drt9VVuO3DS5giaf65FXVXC6Xom6YdMWpeuVwb6Mj6c261vfx6jmAgdv3900jG/0D9yvH1ePquGrt4Zf9fs0vMT++OqvVW9jvvaJXNH9zQtMX0ue5xdI4ueTu5x9z7lfFEEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBEQ8Anbf8EGyYFhF91G1EteHY5AZK6vlDA4j5YWDl8r/ua1u5P6NvJCsX1ZZdY8TxLGenLCJw6147FHNdHtPL5wN2Mcf+L5nSu/nPb9y7+NZtpl009PEN3wi+WzK9Tcoo2uNVARIy3NIB7XDfdjWE/QdnPeOQAOKk11dWXO51NyuNVLVVlTK6aeomd3Ple47uc4+5JJK15GvI66IiyyIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiB+xERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQf/Z"/>
+  </symbol>
+</svg>
+
+<!-- GTM noscript -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T87PC6C3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- Progress bar -->
+<div id="progress-bar"></div>
+
+<!-- ============================================================
+     ANNOUNCEMENT BAR
+     ============================================================ -->
+<div class="announce-bar">
+  <span data-i18n="announce">
+    <strong>Urgence réglementaire 2026</strong><span class="dot"></span>Directive UE 2024/825 · 27 sept. 2026<span class="dot"></span>BPJPH Indonésie · 17 oct. 2026
+  </span>
+</div>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" data-gtm="logo_click">
+      <svg class="edb-logo-svg" viewBox="0 0 256 256" role="img" aria-label="EthicalDataBoost">
+        <use href="#edb-logo-symbol"/>
+      </svg>
+      <div class="nav-brand-text">
+        <span class="nav-brand-name">CertTrack</span>
+        <span class="nav-brand-tag">by EthicalDataBoost</span>
+      </div>
+    </a>
+
+    <div class="nav-links">
+      <a href="#crisis" data-i18n="nav.crisis">Le constat</a>
+      <a href="#solution" data-i18n="nav.solution">La solution</a>
+      <a href="#dashboard" data-i18n="nav.dashboard">Dashboard</a>
+      <a href="#regs" data-i18n="nav.regulations">Réglementations</a>
+      <a href="#faq">FAQ</a>
+    </div>
+
+    <div class="nav-ctas">
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" class="lang-btn active" data-lang="fr">FR</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <a href="#dashboard" class="btn btn-ghost" data-gtm="nav_see_dashboard" data-i18n="nav.see_demo">Voir le dashboard</a>
+      <a href="https://calendly.com/contact-ethicaldataboost/certtrack_free_audit" target="_blank" rel="noopener" class="btn btn-gold" data-gtm="click_audit" data-cta-position="nav" data-i18n="cta.audit_short">Audit gratuit · 20 min</a>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile nav overlay -->
+<nav id="mobile-nav" aria-label="Menu mobile">
+  <button id="mobile-close" aria-label="Fermer">✕</button>
+  <a href="#crisis" data-i18n="nav.crisis">Le constat</a>
+  <a href="#solution" data-i18n="nav.solution">La solution</a>
+  <a href="#dashboard" data-i18n="nav.dashboard">Dashboard</a>
+  <a href="#regs" data-i18n="nav.regulations">Réglementations</a>
+  <a href="#faq">FAQ</a>
+  <a href="https://calendly.com/contact-ethicaldataboost/certtrack_free_audit" target="_blank" rel="noopener" class="mobile-cta" data-gtm="click_audit" data-cta-position="mobile_nav" data-i18n="cta.audit_short">Audit gratuit · 20 min</a>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-split">
+      <!-- LEFT: hook + CTA -->
+      <div>
+        <div class="hero-eyebrow">
+          <span class="pulse"></span>
+          <span data-i18n="hero.eyebrow">Halal · Bio · Vegan · Cosmétique naturelle</span>
+        </div>
+
+        <h1 class="hero-title" data-i18n="hero.title">
+          Vos clients veulent savoir.<br/>
+          Ils ne peuvent pas <em class="serif">vérifier</em>.<br/>
+          Vous pouvez changer ça.
+        </h1>
+
+        <p class="hero-subtitle" data-i18n="hero.subtitle">
+          Dans un marché éthique où 15 ans de fraudes documentées ont installé la défiance, une certification valide et vérifiable est votre seul argument incontestable. CertTrack surveille chaque échéance, documente chaque renouvellement, et rend vos certifications scannables en 5 secondes par vos clients.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="https://calendly.com/contact-ethicaldataboost/certtrack_free_audit" target="_blank" rel="noopener" class="btn btn-gold" data-gtm="click_audit" data-cta-position="hero_primary" data-i18n="cta.audit_full">
+            Audit gratuit · 20 min
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+          <a href="#dashboard" class="btn btn-ghost" data-gtm="hero_see_dashboard" data-i18n="cta.see_dashboard">Voir le dashboard</a>
+        </div>
+
+        <div class="hero-proof">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="color: var(--gold-500)"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+          <span data-i18n="hero.proof">Déploiement clés en main en 4 jours · Ni logiciel à installer, ni équipe technique à mobiliser</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: risk calculator -->
+      <div class="calc-panel" id="calc">
+        <span class="micro" style="color: rgba(212, 179, 74, 0.9); margin-bottom: 0.4rem; display: block;" data-i18n="calc.eyebrow">Calculateur de risque</span>
+        <h3 data-i18n="calc.title">Ce qu'une certif expirée vous coûte vraiment.</h3>
+        <p class="calc-sub" data-i18n="calc.sub">Estimation instantanée · 4 postes de coûts réels · sans inscription.</p>
+
+        <div class="calc-field">
+          <label for="calc-ca" data-i18n="calc.field.ca">Votre CA mensuel (€)</label>
+          <input type="number" id="calc-ca" placeholder="50000" min="0" step="1000" />
+        </div>
+
+        <div class="calc-field">
+          <label for="calc-cert-type" data-i18n="calc.field.type">Type de certification principale</label>
+          <select id="calc-cert-type">
+            <option value="halal_fr" data-i18n="calc.opt.halal_fr">Halal France (ARGML / AVS / HMC)</option>
+            <option value="bio" data-i18n="calc.opt.bio">Bio / Naturel (Ecocert / COSMOS)</option>
+            <option value="halal_id" data-i18n="calc.opt.halal_id">Halal export Indonésie (BPJPH)</option>
+            <option value="halal_my" data-i18n="calc.opt.halal_my">Halal export Malaisie (JAKIM)</option>
+            <option value="vegan" data-i18n="calc.opt.vegan">Vegan (V-Label)</option>
+            <option value="multi" data-i18n="calc.opt.multi">Multi-certifications (≥ 4)</option>
+          </select>
+        </div>
+
+        <div class="calc-field">
+          <label for="calc-count" data-i18n="calc.field.count">Nombre de certifications actives</label>
+          <input type="number" id="calc-count" placeholder="3" min="1" max="50" step="1" value="3" />
+        </div>
+
+        <div class="calc-field">
+          <label for="calc-expo" data-i18n="calc.field.expo">Part du CA liée aux produits certifiés (%)</label>
+          <input type="range" id="calc-expo" min="10" max="100" value="60" step="5" style="padding: 0; height: 36px;" />
+          <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: rgba(250, 246, 239, 0.5); margin-top: 0.2rem; font-family: 'JetBrains Mono', monospace;">
+            <span>10%</span>
+            <span id="expo-val">60%</span>
+            <span>100%</span>
+          </div>
+        </div>
+
+        <div class="calc-result">
+          <span class="calc-result-label" data-i18n="calc.result.label">Exposition au risque estimée</span>
+          <span class="calc-result-value" id="calc-total">—</span>
+        </div>
+
+        <p style="font-size: 0.72rem; color: rgba(250, 246, 239, 0.45); margin-top: 0.8rem; line-height: 1.4;" data-i18n="calc.disclaimer">
+          Estimation sur 3 mois d'indisponibilité moyenne · Sources : DGCCRF, pratiques contractuelles B2B, coûts de re-certification constatés ARGML/Ecocert/BPJPH.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRUST CRISIS STRIP
+     ============================================================ -->
+<section class="crisis-strip" id="crisis">
+  <div class="container">
+    <div class="section-eyebrow" style="color: var(--gold-400);" data-i18n="crisis.eyebrow">Le constat · données sourcées</div>
+    <h2 style="color: var(--cream-50); margin-bottom: 3rem; max-width: 760px;" data-i18n="crisis.title">
+      Les consommateurs doutent. Les contrôleurs aussi. <em class="serif">Les certifications valides, plus que jamais.</em>
+    </h2>
+
+    <div class="crisis-grid">
+      <div class="crisis-stat">
+        <div class="num">68 %</div>
+        <div class="label" data-i18n="crisis.stat1">des consommateurs musulmans se contenteraient de la mention « halal » sans chercher à vérifier.</div>
+        <div class="source" data-i18n="crisis.stat1_src">IFOP · relayé par Al-Kanz (2022)</div>
+      </div>
+
+      <div class="crisis-stat">
+        <div class="num">53 %</div>
+        <div class="label" data-i18n="crisis.stat2">des allégations environnementales en UE sont vagues, trompeuses ou non fondées.</div>
+        <div class="source" data-i18n="crisis.stat2_src">Commission européenne · Directive 2024/825</div>
+      </div>
+
+      <div class="crisis-stat">
+        <div class="num">2 356</div>
+        <div class="label" data-i18n="crisis.stat3">amendes administratives DGCCRF en 2024, pour 64 979 établissements contrôlés.</div>
+        <div class="source" data-i18n="crisis.stat3_src">DGCCRF · Bilan 2024 (economie.gouv.fr)</div>
+      </div>
+
+      <div class="crisis-stat">
+        <div class="num">25 %</div>
+        <div class="label" data-i18n="crisis.stat4">des produits en supermarchés indonésiens ne respectent pas encore les exigences BPJPH.</div>
+        <div class="source" data-i18n="crisis.stat4_src">USDA FAS · Indonesia 2025</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     4 POSTES DE COÛTS
+     ============================================================ -->
+<section>
+  <div class="container">
+    <div class="section-eyebrow" data-i18n="costs.eyebrow">Ce qui coûte vraiment</div>
+    <h2 class="section-title" data-i18n="costs.title">4 postes de coûts <em class="terra">que personne ne voit venir.</em></h2>
+    <p class="section-lead" data-i18n="costs.lead">
+      Une certification expirée ne se réduit jamais à un simple renouvellement administratif. Voici ce que vos concurrents ont appris à leurs dépens.
+    </p>
+
+    <div class="costs-grid">
+      <div class="cost-card">
+        <div class="num">1.</div>
+        <h4 data-i18n="costs.1.title">CA bloqué</h4>
+        <p data-i18n="costs.1.body">Vos commandes B2B s'arrêtent immédiatement dès que votre acheteur détecte une certification expirée. La perte est proportionnelle à votre dépendance aux produits certifiés.</p>
+      </div>
+
+      <div class="cost-card">
+        <div class="num">2.</div>
+        <h4 data-i18n="costs.2.title">Frais de re-certification</h4>
+        <p data-i18n="costs.2.body">ARGML / AVS : 800 à 2 500 € · Ecocert COSMOS : 500 à 3 000 € · BPJPH : audit LPH + re-soumission SIHALAL. Délai de 3 à 26 semaines selon l'organisme.</p>
+      </div>
+
+      <div class="cost-card">
+        <div class="num">3.</div>
+        <h4 data-i18n="costs.3.title">Stock non-conforme</h4>
+        <p data-i18n="costs.3.body">Destruction pure ou ré-étiquetage massif. La directive UE 2024/825 interdit à compter du 27 sept. 2026 toute allégation « bio / naturel / vegan » non substantiable au moment du contrôle.</p>
+      </div>
+
+      <div class="cost-card">
+        <div class="num">4.</div>
+        <h4 data-i18n="costs.4.title">Pénalités contractuelles</h4>
+        <p data-i18n="costs.4.body">Distributeurs B2B : pénalités jusqu'à 1 % du CA annuel. Rappel produit : jusqu'à 600 000 € d'amende + 10 % du CA + 5 ans de prison (règlement UE RSGP en vigueur).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SOLUTION — 2 PROTOCOLES
+     ============================================================ -->
+<section id="solution" style="background: linear-gradient(180deg, var(--cream-100) 0%, var(--cream-200) 100%);">
+  <div class="container">
+    <div class="section-eyebrow" data-i18n="solution.eyebrow">La solution CertTrack</div>
+    <h2 class="section-title" data-i18n="solution.title">
+      Deux protocoles. <em class="serif">Un seul outil.</em>
+    </h2>
+    <p class="section-lead" data-i18n="solution.lead">
+      Parce qu'une certification sert autant à rassurer un acheteur B2B qu'à convaincre un consommateur en rayon, CertTrack opère sur deux fronts simultanément.
+    </p>
+
+    <div class="protocols">
+      <div class="protocol-card">
+        <span class="protocol-badge" data-i18n="solution.p1.badge">Protocole B2B · Alertes</span>
+        <h3 data-i18n="solution.p1.title">Surveillance continue de vos échéances.</h3>
+        <p data-i18n="solution.p1.body">Chaque nuit, nos workflows automatisés vérifient la validité de vos certifications et déclenchent les alertes aux seuils prédéfinis. Vous et vos équipes recevez les bonnes informations, au bon moment, sur le bon canal.</p>
+        <ul>
+          <li data-i18n="solution.p1.li1">Alertes multicanales J-90, J-60, J-30, J-7</li>
+          <li data-i18n="solution.p1.li2">Email + WhatsApp Business + Slack intégrés</li>
+          <li data-i18n="solution.p1.li3">Guide de renouvellement par organisme</li>
+          <li data-i18n="solution.p1.li4">Rapport PDF de conformité à votre logo</li>
+        </ul>
+      </div>
+
+      <div class="protocol-card dark">
+        <span class="protocol-badge" data-i18n="solution.p2.badge">Protocole B2C · QR Code</span>
+        <h3 data-i18n="solution.p2.title">Vos clients vérifient en 5 secondes.</h3>
+        <p data-i18n="solution.p2.body">Un QR code unique par certification, scannable sur vitrine, comptoir, emballage ou fiche produit. Le consommateur accède en temps réel au statut, à l'organisme certificateur et à la date de validité — sans compte, sans téléchargement.</p>
+        <ul>
+          <li data-i18n="solution.p2.li1">Page publique de vérification instantanée</li>
+          <li data-i18n="solution.p2.li2">Bascule automatique en « expiré » si la certif tombe</li>
+          <li data-i18n="solution.p2.li3">Statistiques de scans (volumes, géographie)</li>
+          <li data-i18n="solution.p2.li4">Brandé à votre marque, hébergé en Europe</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DASHBOARD MOCKUP
+     ============================================================ -->
+<section id="dashboard">
+  <div class="container">
+    <div class="section-eyebrow" data-i18n="dashboard.eyebrow">À quoi ça ressemble</div>
+    <h2 class="section-title" data-i18n="dashboard.title">
+      Votre conformité, <em class="serif">à portée de regard.</em>
+    </h2>
+    <p class="section-lead" data-i18n="dashboard.lead">
+      Un tableau de bord clair, accessible depuis n'importe quel navigateur, qui montre à tout moment l'état exact de vos certifications et l'urgence réelle de chaque renouvellement.
+    </p>
+
+    <div class="dashboard-mock">
+      <div class="mock-topbar">
+        <div class="mock-topbar-left">
+          <div class="mock-dots"><span></span><span></span><span></span></div>
+          <strong>CertTrack</strong> · <span data-i18n="mock.client">Client · SAS Nour Import</span>
+        </div>
+        <div class="mock-topbar-right">app.certtrack.fr</div>
+      </div>
+
+      <div class="mock-body">
+        <div class="mock-left">
+          <div class="mock-kpis">
+            <div class="mock-kpi">
+              <div class="big">8</div>
+              <div class="lbl" data-i18n="mock.kpi1">Certif. actives</div>
+            </div>
+            <div class="mock-kpi alert">
+              <div class="big">2</div>
+              <div class="lbl" data-i18n="mock.kpi2">Alertes ouvertes</div>
+            </div>
+            <div class="mock-kpi">
+              <div class="big">59 j</div>
+              <div class="lbl" data-i18n="mock.kpi3">Prochaine échéance</div>
+            </div>
+          </div>
+
+          <div class="mock-certlist">
+            <div class="mock-cert danger">
+              <div class="mock-cert-info">
+                <span class="mock-cert-name">ARGML · Viandes halal</span>
+                <span class="mock-cert-meta" data-i18n="mock.cert1_meta">Expire dans 14 jours · Grande Mosquée de Lyon</span>
+              </div>
+              <span class="mock-cert-badge danger-badge">J-14</span>
+            </div>
+            <div class="mock-cert warn">
+              <div class="mock-cert-info">
+                <span class="mock-cert-name">COSMOS Organic · Cosmétiques</span>
+                <span class="mock-cert-meta" data-i18n="mock.cert2_meta">Expire dans 59 jours · Ecocert Greenlife</span>
+              </div>
+              <span class="mock-cert-badge warn-badge">J-59</span>
+            </div>
+            <div class="mock-cert">
+              <div class="mock-cert-info">
+                <span class="mock-cert-name">AVS · Charcuterie halal</span>
+                <span class="mock-cert-meta" data-i18n="mock.cert3_meta">Valide · 287 jours restants</span>
+              </div>
+              <span class="mock-cert-badge green-badge">OK</span>
+            </div>
+            <div class="mock-cert">
+              <div class="mock-cert-info">
+                <span class="mock-cert-name">V-Label · Gamme vegan</span>
+                <span class="mock-cert-meta" data-i18n="mock.cert4_meta">Valide · 412 jours restants</span>
+              </div>
+              <span class="mock-cert-badge green-badge">OK</span>
+            </div>
+            <div class="mock-cert">
+              <div class="mock-cert-info">
+                <span class="mock-cert-name">BPJPH · Export Indonésie</span>
+                <span class="mock-cert-meta" data-i18n="mock.cert5_meta">Valide · 1 203 jours restants</span>
+              </div>
+              <span class="mock-cert-badge green-badge">OK</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mock-right">
+          <div class="mock-qr-block">
+            <div class="mock-qr-title" data-i18n="mock.qr.title">QR public ARGML</div>
+            <div class="mock-qr-sub" data-i18n="mock.qr.sub">Scannable par vos clients</div>
+            <!-- Stylized QR code SVG -->
+            <svg class="mock-qr-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="QR code de démonstration">
+              <rect width="100" height="100" fill="#FFFCF6"/>
+              <!-- Finder patterns corners -->
+              <rect x="5" y="5" width="20" height="20" fill="#0b2218"/>
+              <rect x="9" y="9" width="12" height="12" fill="#FFFCF6"/>
+              <rect x="12" y="12" width="6" height="6" fill="#0b2218"/>
+              <rect x="75" y="5" width="20" height="20" fill="#0b2218"/>
+              <rect x="79" y="9" width="12" height="12" fill="#FFFCF6"/>
+              <rect x="82" y="12" width="6" height="6" fill="#0b2218"/>
+              <rect x="5" y="75" width="20" height="20" fill="#0b2218"/>
+              <rect x="9" y="79" width="12" height="12" fill="#FFFCF6"/>
+              <rect x="12" y="82" width="6" height="6" fill="#0b2218"/>
+              <!-- Data pattern -->
+              <g fill="#0b2218">
+                <rect x="32" y="8" width="4" height="4"/><rect x="40" y="8" width="4" height="4"/><rect x="48" y="8" width="4" height="4"/><rect x="60" y="8" width="4" height="4"/><rect x="68" y="8" width="4" height="4"/>
+                <rect x="32" y="16" width="4" height="4"/><rect x="44" y="16" width="4" height="4"/><rect x="56" y="16" width="4" height="4"/><rect x="64" y="16" width="4" height="4"/>
+                <rect x="36" y="24" width="4" height="4"/><rect x="48" y="24" width="4" height="4"/><rect x="52" y="24" width="4" height="4"/><rect x="68" y="24" width="4" height="4"/>
+                <rect x="8" y="32" width="4" height="4"/><rect x="28" y="32" width="4" height="4"/><rect x="36" y="32" width="4" height="4"/><rect x="44" y="32" width="4" height="4"/><rect x="56" y="32" width="4" height="4"/><rect x="72" y="32" width="4" height="4"/><rect x="84" y="32" width="4" height="4"/>
+                <rect x="12" y="40" width="4" height="4"/><rect x="32" y="40" width="4" height="4"/><rect x="40" y="40" width="4" height="4"/><rect x="52" y="40" width="4" height="4"/><rect x="64" y="40" width="4" height="4"/><rect x="76" y="40" width="4" height="4"/><rect x="88" y="40" width="4" height="4"/>
+                <rect x="8" y="48" width="4" height="4"/><rect x="20" y="48" width="4" height="4"/><rect x="36" y="48" width="4" height="4"/><rect x="48" y="48" width="4" height="4"/><rect x="60" y="48" width="4" height="4"/><rect x="72" y="48" width="4" height="4"/><rect x="80" y="48" width="4" height="4"/>
+                <rect x="16" y="56" width="4" height="4"/><rect x="28" y="56" width="4" height="4"/><rect x="44" y="56" width="4" height="4"/><rect x="56" y="56" width="4" height="4"/><rect x="68" y="56" width="4" height="4"/><rect x="84" y="56" width="4" height="4"/>
+                <rect x="8" y="64" width="4" height="4"/><rect x="24" y="64" width="4" height="4"/><rect x="32" y="64" width="4" height="4"/><rect x="48" y="64" width="4" height="4"/><rect x="60" y="64" width="4" height="4"/><rect x="76" y="64" width="4" height="4"/><rect x="88" y="64" width="4" height="4"/>
+                <rect x="32" y="72" width="4" height="4"/><rect x="44" y="72" width="4" height="4"/><rect x="56" y="72" width="4" height="4"/><rect x="68" y="72" width="4" height="4"/><rect x="80" y="72" width="4" height="4"/>
+                <rect x="36" y="80" width="4" height="4"/><rect x="52" y="80" width="4" height="4"/><rect x="64" y="80" width="4" height="4"/><rect x="88" y="80" width="4" height="4"/>
+                <rect x="32" y="88" width="4" height="4"/><rect x="48" y="88" width="4" height="4"/><rect x="60" y="88" width="4" height="4"/><rect x="72" y="88" width="4" height="4"/><rect x="84" y="88" width="4" height="4"/>
+              </g>
+            </svg>
+            <div class="mock-qr-caption" data-i18n="mock.qr.status">✓ Statut : valide · Maj temps réel</div>
+          </div>
+
+          <div style="margin-top: 1.8rem; padding-top: 1.5rem; border-top: 1px solid var(--cream-300);">
+            <div class="mock-qr-title" style="font-size: 0.9rem; margin-bottom: 0.4rem;" data-i18n="mock.pdf.title">Rapport de conformité</div>
+            <div style="padding: 1rem; background: var(--cream-50); border-radius: 10px; border: 1px solid var(--cream-300); font-size: 0.78rem; color: var(--ink-500); line-height: 1.5;">
+              <div style="font-family: 'JetBrains Mono', monospace; color: var(--gold-600); margin-bottom: 0.3rem;">📄 conformite_Q2_2026.pdf</div>
+              <span data-i18n="mock.pdf.desc">Export PDF signé, prêt à envoyer à vos acheteurs & auditeurs.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROCESS — 4 JOURS
+     ============================================================ -->
+<section style="background: var(--cream-200);">
+  <div class="container">
+    <div class="section-eyebrow" data-i18n="process.eyebrow">Déploiement clés en main</div>
+    <h2 class="section-title" data-i18n="process.title">
+      Opérationnel en <em class="serif">4 jours.</em>
+    </h2>
+    <p class="section-lead" data-i18n="process.lead">
+      Aucune installation, aucune configuration côté client. Nos équipes déploient l'ensemble du système pendant que vous continuez votre activité.
+    </p>
+
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="process-num">01</div>
+        <h4 data-i18n="process.1.title">Audit & onboarding</h4>
+        <p data-i18n="process.1.body">Formulaire de 10 minutes pour recenser vos certifications, dates d'expiration et contacts des organismes. Aucune compétence technique requise.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">02</div>
+        <h4 data-i18n="process.2.title">Configuration & paramétrage</h4>
+        <p data-i18n="process.2.body">Nos équipes configurent la surveillance, les alertes multicanales, le QR code de vérification et le rapport PDF personnalisé à votre logo.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">03</div>
+        <h4 data-i18n="process.3.title">Mise en service</h4>
+        <p data-i18n="process.3.body">Livraison de votre dashboard sécurisé, formation 20 minutes en visio, premières alertes actives. Support continu inclus.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CERTIFICATIONS COUVERTES
+     ============================================================ -->
+<section>
+  <div class="container">
+    <div class="section-eyebrow" data-i18n="certs.eyebrow">Couverture</div>
+    <h2 class="section-title" data-i18n="certs.title">Toutes les certifications <em class="terra">qui comptent pour votre marché.</em></h2>
+    <p class="section-lead" data-i18n="certs.lead">
+      Une taxonomie vivante, enrichie en continu. Un organisme n'est pas dans notre liste ? Nous l'intégrons sous 48 heures, sans surcoût.
+    </p>
+
+    <div class="certs-grid">
+      <div class="cert-chip"><div class="cat" data-i18n="certs.cat.halal_fr">Halal France</div><div class="name">ARGML</div></div>
+      <div class="cert-chip"><div class="cat" data-i18n="certs.cat.halal_fr">Halal France</div><div class="name">AVS</div></div>
+      <div class="cert-chip"><div class="cat" data-i18n="certs.cat.halal_fr">Halal France</div><div class="name">HMC</div></div>
+      <div class="cert-chip"><div class="cat" data-i18n="certs.cat.halal_fr">Halal France</div><div class="name">ACMIF</div></div>
+      <div class="cert-chip"><div class="cat" data-i18n="certs.cat.halal_intl">Halal Export</div><div class="name">BPJPH · Indonésie</div></div>
+      <div class="cert-chip"><div class="cat" data-i18n="certs.cat.halal_intl">Halal Export</div><div class="name">JAKIM · Malaysia</div></div>
+      <div class="cert-chip"><div class="cat" data-i18n="certs.cat.halal_intl">Halal Export</div><div class="name">MUI · Indonésie</div></div>
+      <div class="cert-chip"><div class="cat" data-i18n="certs.cat.bio">Bio alimentaire</div><div class="name">AB · Eurofeuille</div></div>
+      <div class="cert-chip"><div class="cat" data-i18n="certs.cat.bio">Bio alimentaire</div><div class="name">Demeter</div></div>
+      <div class="cert-chip"><div class="cat" data-i18n="certs.cat.cosmo">Cosmétique</div><div class="name">COSMOS Organic</div></div>
+      <div class="cert-chip"><div class="cat" data-i18n="certs.cat.cosmo">Cosmétique</div><div class="name">COSMOS Natural</div></div>
+      <div class="cert-chip"><div class="cat" data-i18n="certs.cat.cosmo">Cosmétique</div><div class="name">Natrue · BDIH</div></div>
+      <div class="cert-chip"><div class="cat" data-i18n="certs.cat.vegan">Vegan · Éthique</div><div class="name">V-Label</div></div>
+      <div class="cert-chip"><div class="cat" data-i18n="certs.cat.vegan">Vegan · Éthique</div><div class="name">Cruelty-Free</div></div>
+      <div class="cert-chip"><div class="cat" data-i18n="certs.cat.textile">Textile éthique</div><div class="name">GOTS · OEKO-TEX</div></div>
+      <div class="cert-chip" style="border-style: dashed; border-color: var(--gold-500);"><div class="cat" style="color: var(--gold-600);" data-i18n="certs.cat.more">+ 30 autres</div><div class="name" data-i18n="certs.more_text">Intégration sous 48h</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     RÉGLEMENTATIONS 2026
+     ============================================================ -->
+<section id="regs" style="background: var(--cream-200);">
+  <div class="container">
+    <div class="section-eyebrow" data-i18n="regs.eyebrow">Calendrier réglementaire</div>
+    <h2 class="section-title" data-i18n="regs.title">
+      4 échéances qui vont <em class="terra">tout changer.</em>
+    </h2>
+    <p class="section-lead" data-i18n="regs.lead">
+      Le paysage réglementaire de l'économie éthique se durcit partout à la fois. Ne laissez pas une deadline vous prendre de court.
+    </p>
+
+    <div class="regs-grid">
+      <div class="reg-card urgent">
+        <div class="reg-date" data-i18n="regs.1.date">🇪🇺 27 septembre 2026</div>
+        <h4 data-i18n="regs.1.title">Directive UE 2024/825 · EmpCo</h4>
+        <p data-i18n="regs.1.body">Fin des allégations « écologique, vert, biodégradable, naturel » non substantiables. Les labels non certifiés par un tiers indépendant sont interdits. Impacte bio · naturel · vegan · éco-responsable.</p>
+      </div>
+
+      <div class="reg-card urgent">
+        <div class="reg-date" data-i18n="regs.2.date">🇮🇩 17 octobre 2026</div>
+        <h4 data-i18n="regs.2.title">BPJPH Indonésie · certification halal obligatoire</h4>
+        <p data-i18n="regs.2.body">Certification halal obligatoire pour tous les produits F&B et cosmétiques importés. Certificats valides 4 ans, mise à jour exigée à chaque changement d'ingrédient ou fournisseur.</p>
+      </div>
+
+      <div class="reg-card hot">
+        <div class="reg-date" data-i18n="regs.3.date">🇲🇾 Renouvellement 2 ans</div>
+        <h4 data-i18n="regs.3.title">JAKIM Malaysia · audits de surveillance</h4>
+        <p data-i18n="regs.3.body">Certificats JAKIM valides 2 ans seulement. Audits de surveillance périodiques. Toute modification d'ingrédient, de fournisseur ou de process doit être déclarée avant implémentation.</p>
+      </div>
+
+      <div class="reg-card">
+        <div class="reg-date" data-i18n="regs.4.date">🇫🇷 En vigueur · intensification</div>
+        <h4 data-i18n="regs.4.title">DGCCRF · pratiques commerciales trompeuses</h4>
+        <p data-i18n="regs.4.body">2 356 amendes administratives en 2024, 3 447 transmissions au parquet. Une certification expirée mais affichée relève de l'art. L.121-1 du Code de la consommation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     VS EXCEL
+     ============================================================ -->
+<section>
+  <div class="container">
+    <div class="section-eyebrow" data-i18n="excel.eyebrow">La vraie comparaison</div>
+    <h2 class="section-title" data-i18n="excel.title">
+      Vous suivez vos certifications dans Excel. <em class="terra">Voici ce qu'Excel ne peut pas faire.</em>
+    </h2>
+
+    <div class="excel-compare">
+      <div class="excel-side">
+        <h4 data-i18n="excel.side1.title">📊 Tableur Excel</h4>
+        <ul>
+          <li data-i18n="excel.l1">Ne vous alerte jamais d'une expiration imminente</li>
+          <li data-i18n="excel.l2">Ne vérifie pas si une certification a été suspendue entretemps</li>
+          <li data-i18n="excel.l3">Ne génère aucun rapport PDF signé à envoyer à vos acheteurs</li>
+          <li data-i18n="excel.l4">Ne propose aucune vérification publique à vos clients finaux</li>
+          <li data-i18n="excel.l5">Se dégrade à mesure que votre portefeuille grossit</li>
+        </ul>
+      </div>
+      <div class="ct-side">
+        <h4 data-i18n="excel.side2.title">✦ CertTrack</h4>
+        <ul>
+          <li data-i18n="excel.r1">Alertes automatiques J-90, J-60, J-30, J-7 sur email + WhatsApp</li>
+          <li data-i18n="excel.r2">Vérification nocturne sur les listes publiques des organismes</li>
+          <li data-i18n="excel.r3">Rapport PDF à votre logo, généré en 1 clic</li>
+          <li data-i18n="excel.r4">QR code public pour vérification consommateur instantanée</li>
+          <li data-i18n="excel.r5">S'adapte sans frais à 5 ou 50 certifications</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     AVATARS CIBLES
+     ============================================================ -->
+<section style="background: var(--cream-200);">
+  <div class="container">
+    <div class="section-eyebrow" data-i18n="avatar.eyebrow">À qui CertTrack s'adresse</div>
+    <h2 class="section-title" data-i18n="avatar.title">
+      Trois profils. <em class="serif">Le même enjeu.</em>
+    </h2>
+    <p class="section-lead" data-i18n="avatar.lead">
+      Profils représentatifs de notre cible. Si vous vous reconnaissez, vous êtes au bon endroit.
+    </p>
+
+    <div class="avatars-grid">
+      <div class="avatar-card">
+        <div class="avatar-initials">KH</div>
+        <span class="note" data-i18n="avatar.1.note">Profil cible · importateur halal</span>
+        <h4 data-i18n="avatar.1.name">Karim · Fournisseur halal</h4>
+        <div class="role" data-i18n="avatar.1.role">Importateur · 6 certifications actives</div>
+        <p class="quote" data-i18n="avatar.1.quote">« J'ai failli perdre une livraison Ramadan parce que mon certificat ARGML était en renouvellement. Depuis, je veux une surveillance automatique que je ne peux pas oublier. »</p>
+        <div class="certs">
+          <span class="cert-tag">ARGML</span>
+          <span class="cert-tag">AVS</span>
+          <span class="cert-tag">HMC</span>
+        </div>
+      </div>
+
+      <div class="avatar-card">
+        <div class="avatar-initials">MB</div>
+        <span class="note" data-i18n="avatar.2.note">Profil cible · exportateur multi-marchés</span>
+        <h4 data-i18n="avatar.2.name">Mohamed · Exportateur halal</h4>
+        <div class="role" data-i18n="avatar.2.role">Direction achats · 12 certifications multi-pays</div>
+        <p class="quote" data-i18n="avatar.2.quote">« La deadline BPJPH d'octobre 2026 m'oblige à prouver la validité de mes certifications en permanence. Le rapport PDF envoyé à mes acheteurs est devenu un argument commercial. »</p>
+        <div class="certs">
+          <span class="cert-tag">BPJPH</span>
+          <span class="cert-tag">JAKIM</span>
+          <span class="cert-tag">V-Label</span>
+          <span class="cert-tag">GOTS</span>
+        </div>
+      </div>
+
+      <div class="avatar-card">
+        <div class="avatar-initials">SF</div>
+        <span class="note" data-i18n="avatar.3.note">Profil cible · marque cosméto bio/halal</span>
+        <h4 data-i18n="avatar.3.name">Samira · Fondatrice marque</h4>
+        <div class="role" data-i18n="avatar.3.role">Cosmétique naturelle · 5 certifications</div>
+        <p class="quote" data-i18n="avatar.3.quote">« Avec la directive UE qui arrive, mes allégations bio doivent être prouvées en permanence. Le QR code public sur chaque produit lève le doute avant même la question. »</p>
+        <div class="certs">
+          <span class="cert-tag">COSMOS</span>
+          <span class="cert-tag">ARGML</span>
+          <span class="cert-tag">OEKO-TEX</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LEAD MAGNET — PDF GATED
+     ============================================================ -->
+<section class="lead-magnet">
+  <div class="container">
+    <div class="magnet-box">
+      <div class="magnet-text">
+        <span class="section-eyebrow" style="color: var(--gold-400);" data-i18n="magnet.eyebrow">Ressource gratuite</span>
+        <h2 data-i18n="magnet.title">Le guide de renouvellement par organisme.</h2>
+        <p data-i18n="magnet.body">Un PDF de 18 pages qui détaille, pour chaque organisme certificateur (ARGML, AVS, HMC, Ecocert, COSMOS, BPJPH, JAKIM), les pièces à joindre, les délais réels, les coûts constatés et les erreurs qui rallongent la procédure.</p>
+        <ul class="magnet-features">
+          <li data-i18n="magnet.f1">Checklist des pièces justificatives par organisme</li>
+          <li data-i18n="magnet.f2">Délais réels de traitement 2026</li>
+          <li data-i18n="magnet.f3">Coûts constatés et fourchettes budgétaires</li>
+          <li data-i18n="magnet.f4">Template de plan de renouvellement 90 jours</li>
+        </ul>
+      </div>
+
+      <div>
+        <form class="magnet-form" id="magnet-form" novalidate>
+          <label for="magnet-email" data-i18n="magnet.form.label">Email professionnel</label>
+          <input type="email" id="magnet-email" required placeholder="vous@votre-entreprise.com" />
+
+          <label for="magnet-company" style="margin-top: 0.5rem;" data-i18n="magnet.form.company">Entreprise</label>
+          <input type="text" id="magnet-company" required placeholder="Nom de votre société" />
+
+          <label class="consent">
+            <input type="checkbox" id="magnet-consent" required />
+            <span data-i18n="magnet.form.consent">J'accepte de recevoir le guide par email et des communications CertTrack. Désinscription en 1 clic. RGPD-compliant.</span>
+          </label>
+
+          <button type="submit" data-gtm="magnet_submit" data-i18n="magnet.form.cta">Recevoir le guide PDF</button>
+        </form>
+
+        <div class="magnet-success" id="magnet-success">
+          <h4 data-i18n="magnet.success.title">✓ C'est parti.</h4>
+          <p data-i18n="magnet.success.body">Le guide arrive dans votre boîte mail dans les minutes qui viennent. Pensez à vérifier vos spams.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section id="faq">
+  <div class="container-narrow">
+    <div class="section-eyebrow" data-i18n="faq.eyebrow">Questions fréquentes</div>
+    <h2 class="section-title" data-i18n="faq.title">Tout ce que vous voulez <em class="serif">savoir.</em></h2>
+
+    <div class="faq-list">
+      <details class="faq">
+        <summary data-i18n="faq.1.q">Combien coûte CertTrack ?</summary>
+        <p data-i18n="faq.1.a">Le tarif dépend du nombre de certifications surveillées, des canaux d'alerte activés et de la complexité de votre portefeuille (export, multi-entités, fournisseurs). Le prix est établi pendant l'audit gratuit de 20 minutes, en fonction de votre situation réelle. Nous ne vendons pas de pack générique.</p>
+      </details>
+
+      <details class="faq">
+        <summary data-i18n="faq.2.q">En quoi CertTrack diffère d'un rappel Google Calendar ?</summary>
+        <p data-i18n="faq.2.a">Un rappel calendrier ne vérifie pas si une certification a été réellement renouvelée. Il ne génère pas de rapport PDF à votre logo. Il ne s'envoie pas sur WhatsApp avec le guide de renouvellement de l'organisme concerné. Il ne produit pas de QR code scannable par vos clients. CertTrack n'est pas un rappel — c'est un système de conformité documentée.</p>
+      </details>
+
+      <details class="faq">
+        <summary data-i18n="faq.3.q">Mes données sont-elles sécurisées ?</summary>
+        <p data-i18n="faq.3.a">Hébergement 100 % européen (Hetzner Frankfurt). Chiffrement AES-256 au repos, TLS 1.3 en transit, conformité RGPD native. Historique documentaire immuable, exploitable en audit DGCCRF ou BPJPH. Export et suppression de données sur simple demande.</p>
+      </details>
+
+      <details class="faq">
+        <summary data-i18n="faq.4.q">Un organisme n'est pas dans votre liste — est-ce bloquant ?</summary>
+        <p data-i18n="faq.4.a">Notre taxonomie est vivante. Envoyez-nous le référentiel de l'organisme manquant et nous l'intégrons sous 48 heures ouvrées, sans surcoût pour vous ni pour les autres utilisateurs.</p>
+      </details>
+
+      <details class="faq">
+        <summary data-i18n="faq.5.q">Comment se passe l'audit gratuit de 20 minutes ?</summary>
+        <p data-i18n="faq.5.a">En visioconférence, nous passons en revue votre portefeuille de certifications, vos échéances connues, les incidents passés et les exigences de vos acheteurs. Nous calculons ensemble votre exposition réelle au risque, puis nous vous présentons la configuration CertTrack adaptée à votre situation. Aucun engagement à l'issue.</p>
+      </details>
+
+      <details class="faq">
+        <summary data-i18n="faq.6.q">Puis-je intégrer CertTrack à mon ERP ou mon PIM ?</summary>
+        <p data-i18n="faq.6.a">Oui. Une API REST et un connecteur natif permettent de synchroniser vos certifications avec SAP, Odoo, Akeneo, Shopify, WooCommerce et votre WMS. Les alertes peuvent déclencher automatiquement un blocage de commande côté système.</p>
+      </details>
+
+      <details class="faq">
+        <summary data-i18n="faq.7.q">Qui est derrière CertTrack ?</summary>
+        <p data-i18n="faq.7.a">CertTrack est édité par <strong>EthicalDataBoost</strong>, cabinet d'automatisation IA et data analytics dédié aux entreprises de l'économie éthique (halal, bio, naturel, vegan, éco-responsable). Tous les chiffres de cette page sont issus de sources primaires vérifiées (DGCCRF, IFOP, USDA FAS, Commission européenne).</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+     ============================================================ -->
+<section class="final-cta">
+  <div class="container">
+    <h2 data-i18n="final.title">
+      Si un acheteur vous demandait la preuve de conformité aujourd'hui — <em class="serif">en combien de minutes pourriez-vous la fournir ?</em>
+    </h2>
+    <p data-i18n="final.body">
+      Un audit de 20 minutes avec notre équipe pour cartographier votre risque, identifier les échéances critiques et définir la configuration CertTrack adaptée à votre activité.
+    </p>
+    <div class="final-cta-buttons">
+      <a href="https://calendly.com/contact-ethicaldataboost/certtrack_free_audit" target="_blank" rel="noopener" class="btn btn-gold" data-gtm="click_audit" data-cta-position="final" data-i18n="cta.audit_full">
+        Réserver l'audit gratuit
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+      <a href="mailto:contact.ethicaldataboost@gmail.com?subject=CertTrack%20-%20Demande%20d'information" class="btn btn-outline-cream" style="color: var(--cream-100); border-color: rgba(250,246,239,0.25);" data-gtm="mailto_click" data-i18n="cta.write">
+        Nous écrire
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <!-- Brand center -->
+    <div class="footer-brand">
+      <svg class="footer-logo-big" viewBox="0 0 256 256" role="img" aria-label="EthicalDataBoost">
+        <use href="#edb-logo-symbol"/>
+      </svg>
+      <div class="tagline">EthicalDataBoost</div>
+      <div class="tagline-2" data-i18n="footer.tagline2">Halal · Bio · Naturel · Vegan · Éco-responsable</div>
+      <h3 data-i18n="footer.brand_h">Data Intelligence &amp; Automatisation IA</h3>
+      <p class="desc" data-i18n="footer.brand_desc">Nous accompagnons les entreprises de l'économie éthique dans leur transformation data et leur automatisation par l'intelligence artificielle. Des solutions qui respectent les valeurs de votre marché.</p>
+      <div class="ctas">
+        <a href="https://calendly.com/contact-ethicaldataboost/certtrack_free_audit" target="_blank" rel="noopener" class="btn btn-gold" data-gtm="click_audit" data-cta-position="footer" data-i18n="cta.audit_full">Réserver l'audit gratuit</a>
+        <a href="mailto:contact.ethicaldataboost@gmail.com" class="btn btn-outline-cream" style="color: var(--cream-100); border-color: rgba(250,246,239,0.3);" data-gtm="mailto_click" data-i18n="cta.write">Nous écrire</a>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="footer-tabs" role="tablist">
+      <button class="footer-tab active" data-tab="certs" data-gtm="footer_tab_click" data-i18n="footer.tab1">Certifications surveillées</button>
+      <button class="footer-tab" data-tab="sols" data-gtm="footer_tab_click" data-i18n="footer.tab2">Nos solutions</button>
+      <button class="footer-tab" data-tab="legal" data-gtm="footer_tab_click" data-i18n="footer.tab3">Mentions légales</button>
+      <button class="footer-tab" data-tab="rgpd" data-gtm="footer_tab_click" data-i18n="footer.tab4">RGPD · IP · Sources</button>
+    </div>
+
+    <div class="footer-panel active" id="panel-certs">
+      <h4 data-i18n="panel.certs.h">Certifications surveillées par CertTrack</h4>
+      <p data-i18n="panel.certs.p">Halal France : <a href="https://www.mosquee-lyon.org" target="_blank" rel="noopener" data-gtm="outbound_click">ARGML</a>, AVS, HMC, ACMIF, Grande Mosquée de Paris. Halal International : BPJPH (Indonésie), JAKIM (Malaisie), MUI. Bio : AB, <a href="https://www.ecocert.com" target="_blank" rel="noopener" data-gtm="outbound_click">Ecocert</a>, Nature &amp; Progrès, Demeter. Cosmétique : <a href="https://www.cosmos-standard.org" target="_blank" rel="noopener" data-gtm="outbound_click">COSMOS Organic / Natural</a>, Natrue, BDIH, Slow Cosmétique. Vegan &amp; éthique : V-Label, Cruelty-Free, B Corp. Textile : GOTS, OEKO-TEX Standard 100. Une certification manque ? Nous l'intégrons sous 48 heures.</p>
+    </div>
+
+    <div class="footer-panel" id="panel-sols">
+      <h4 data-i18n="panel.sols.h">Nos solutions EthicalDataBoost</h4>
+      <p data-i18n="panel.sols.col1_h"><strong>Certifications &amp; Conformité</strong></p>
+      <p data-i18n="panel.sols.col1">CertTrack — surveillance automatisée halal, bio, vegan, éco-responsable. Veille Ramadan BI — prédictif saisonnier pour marchés éthiques.</p>
+      <p data-i18n="panel.sols.col2_h" style="margin-top: 1rem;"><strong>E-commerce &amp; Automatisation</strong></p>
+      <p data-i18n="panel.sols.col2">RecoverFlow — paniers abandonnés. LoyalLoop — post-achat. AbandonIntel — rapport data mensuel. PilotBoard — dashboard BI unifié.</p>
+      <p data-i18n="panel.sols.col3_h" style="margin-top: 1rem;"><strong>Géographie</strong></p>
+      <p data-i18n="panel.sols.col3">France · International.</p>
+    </div>
+
+    <div class="footer-panel" id="panel-legal">
+      <h4 data-i18n="panel.legal.h">Mentions légales</h4>
+      <p data-i18n="panel.legal.body">
+        <strong>Éditeur :</strong> EthicalDataBoost — Micro-entreprise (auto-entrepreneur).<br/>
+        <strong>Adresse :</strong> 88 rue de Stalingrad, Yvelines, France.<br/>
+        <strong>Email :</strong> <a href="mailto:contact.ethicaldataboost@gmail.com">contact.ethicaldataboost@gmail.com</a><br/>
+        <strong>Code APE / NAF :</strong> 6201Z — Conseil en stratégie de données, analyse statistique, développement de solutions d'automatisation et intégration d'outils d'intelligence artificielle.<br/>
+        <strong>Hébergeur :</strong> Hetzner Online GmbH — Industriestr. 25, 91710 Gunzenhausen, Allemagne. Données physiquement hébergées à Frankfurt (Allemagne).<br/>
+        <strong>TVA :</strong> Non applicable — art. 293 B du CGI (franchise de TVA micro-entreprise).
+      </p>
+    </div>
+
+    <div class="footer-panel" id="panel-rgpd">
+      <h4 data-i18n="panel.rgpd.h">RGPD · Propriété intellectuelle · Sources</h4>
+      <p data-i18n="panel.rgpd.body">
+        <strong>RGPD :</strong> Données traitées conformément au RGPD (UE 2016/679). Hébergement : Hetzner Frankfurt, Allemagne. Finalité : exécution du contrat et surveillance des certifications. Aucune revente, aucun partage tiers. Droits d'accès, de rectification, d'effacement : sur demande à contact.ethicaldataboost@gmail.com.<br/><br/>
+        <strong>Propriété intellectuelle :</strong> Workflows, dashboards et scripts développés demeurent propriété d'EthicalDataBoost jusqu'à cession explicite dans le contrat de prestation signé.<br/><br/>
+        <strong>RC Pro :</strong> Couverture des erreurs algorithmiques, dysfonctionnements d'automatisation et cyber-risques liés aux connexions d'outils tiers.<br/><br/>
+        <strong>Cookies :</strong> Fonctionnels essentiels + mesure d'audience anonymisée (GA4). Aucun traceur publicitaire.<br/><br/>
+        <strong>Sources de données :</strong> Tous les chiffres présentés sur cette page sont issus de sources primaires vérifiées — DGCCRF (bilan 2024), IFOP (via Al-Kanz), Commission européenne (Directive 2024/825), USDA FAS (Indonesia 2025), Ecocert, ARGML. Aucune statistique autoproclamée.
+      </p>
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 EthicalDataBoost · Tous droits réservés · <span data-i18n="footer.made">Hébergé en Europe · RGPD compliant</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button id="back-top" aria-label="Retour en haut" data-gtm="back_to_top_click">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+<script>
+// ============================================================
+// i18n — FR / EN translations
+// ============================================================
+const i18n = {
+  fr: {
+    "meta.title": "CertTrack — Le pilotage intelligent des certifications halal, bio & éthiques · EthicalDataBoost",
+    "meta.description": "Dans un marché éthique fragilisé par la fraude et la défiance, la certification valide est votre seul argument incontestable.",
+    "announce": "<strong>Urgence réglementaire 2026</strong><span class='dot'></span>Directive UE 2024/825 · 27 sept. 2026<span class='dot'></span>BPJPH Indonésie · 17 oct. 2026",
+    "nav.crisis": "Le constat",
+    "nav.solution": "La solution",
+    "nav.dashboard": "Dashboard",
+    "nav.regulations": "Réglementations",
+    "nav.see_demo": "Voir le dashboard",
+    "cta.audit_short": "Audit gratuit · 20 min",
+    "cta.audit_full": "Réserver l'audit gratuit",
+    "cta.see_dashboard": "Voir le dashboard",
+    "cta.write": "Nous écrire",
+    "hero.eyebrow": "Halal · Bio · Vegan · Cosmétique naturelle",
+    "hero.title": "Vos clients veulent savoir.<br/>Ils ne peuvent pas <em class='serif'>vérifier</em>.<br/>Vous pouvez changer ça.",
+    "hero.subtitle": "Dans un marché éthique où 15 ans de fraudes documentées ont installé la défiance, une certification valide et vérifiable est votre seul argument incontestable. CertTrack surveille chaque échéance, documente chaque renouvellement, et rend vos certifications scannables en 5 secondes par vos clients.",
+    "hero.proof": "Déploiement clés en main en 4 jours · Ni logiciel à installer, ni équipe technique à mobiliser",
+    "calc.eyebrow": "Calculateur de risque",
+    "calc.title": "Ce qu'une certif expirée vous coûte vraiment.",
+    "calc.sub": "Estimation instantanée · 4 postes de coûts réels · sans inscription.",
+    "calc.field.ca": "Votre CA mensuel (€)",
+    "calc.field.type": "Type de certification principale",
+    "calc.field.count": "Nombre de certifications actives",
+    "calc.field.expo": "Part du CA liée aux produits certifiés (%)",
+    "calc.opt.halal_fr": "Halal France (ARGML / AVS / HMC)",
+    "calc.opt.bio": "Bio / Naturel (Ecocert / COSMOS)",
+    "calc.opt.halal_id": "Halal export Indonésie (BPJPH)",
+    "calc.opt.halal_my": "Halal export Malaisie (JAKIM)",
+    "calc.opt.vegan": "Vegan (V-Label)",
+    "calc.opt.multi": "Multi-certifications (≥ 4)",
+    "calc.result.label": "Exposition au risque estimée",
+    "calc.disclaimer": "Estimation sur 3 mois d'indisponibilité moyenne · Sources : DGCCRF, pratiques contractuelles B2B, coûts de re-certification constatés ARGML/Ecocert/BPJPH.",
+    "crisis.eyebrow": "Le constat · données sourcées",
+    "crisis.title": "Les consommateurs doutent. Les contrôleurs aussi. <em class='serif'>Les certifications valides, plus que jamais.</em>",
+    "crisis.stat1": "des consommateurs musulmans se contenteraient de la mention « halal » sans chercher à vérifier.",
+    "crisis.stat1_src": "IFOP · relayé par Al-Kanz (2022)",
+    "crisis.stat2": "des allégations environnementales en UE sont vagues, trompeuses ou non fondées.",
+    "crisis.stat2_src": "Commission européenne · Directive 2024/825",
+    "crisis.stat3": "amendes administratives DGCCRF en 2024, pour 64 979 établissements contrôlés.",
+    "crisis.stat3_src": "DGCCRF · Bilan 2024 (economie.gouv.fr)",
+    "crisis.stat4": "des produits en supermarchés indonésiens ne respectent pas encore les exigences BPJPH.",
+    "crisis.stat4_src": "USDA FAS · Indonesia 2025",
+    "costs.eyebrow": "Ce qui coûte vraiment",
+    "costs.title": "4 postes de coûts <em class='terra'>que personne ne voit venir.</em>",
+    "costs.lead": "Une certification expirée ne se réduit jamais à un simple renouvellement administratif. Voici ce que vos concurrents ont appris à leurs dépens.",
+    "costs.1.title": "CA bloqué",
+    "costs.1.body": "Vos commandes B2B s'arrêtent immédiatement dès que votre acheteur détecte une certification expirée. La perte est proportionnelle à votre dépendance aux produits certifiés.",
+    "costs.2.title": "Frais de re-certification",
+    "costs.2.body": "ARGML / AVS : 800 à 2 500 € · Ecocert COSMOS : 500 à 3 000 € · BPJPH : audit LPH + re-soumission SIHALAL. Délai de 3 à 26 semaines selon l'organisme.",
+    "costs.3.title": "Stock non-conforme",
+    "costs.3.body": "Destruction pure ou ré-étiquetage massif. La directive UE 2024/825 interdit à compter du 27 sept. 2026 toute allégation « bio / naturel / vegan » non substantiable au moment du contrôle.",
+    "costs.4.title": "Pénalités contractuelles",
+    "costs.4.body": "Distributeurs B2B : pénalités jusqu'à 1 % du CA annuel. Rappel produit : jusqu'à 600 000 € d'amende + 10 % du CA + 5 ans de prison (règlement UE RSGP en vigueur).",
+    "solution.eyebrow": "La solution CertTrack",
+    "solution.title": "Deux protocoles. <em class='serif'>Un seul outil.</em>",
+    "solution.lead": "Parce qu'une certification sert autant à rassurer un acheteur B2B qu'à convaincre un consommateur en rayon, CertTrack opère sur deux fronts simultanément.",
+    "solution.p1.badge": "Protocole B2B · Alertes",
+    "solution.p1.title": "Surveillance continue de vos échéances.",
+    "solution.p1.body": "Chaque nuit, nos workflows automatisés vérifient la validité de vos certifications et déclenchent les alertes aux seuils prédéfinis. Vous et vos équipes recevez les bonnes informations, au bon moment, sur le bon canal.",
+    "solution.p1.li1": "Alertes multicanales J-90, J-60, J-30, J-7",
+    "solution.p1.li2": "Email + WhatsApp Business + Slack intégrés",
+    "solution.p1.li3": "Guide de renouvellement par organisme",
+    "solution.p1.li4": "Rapport PDF de conformité à votre logo",
+    "solution.p2.badge": "Protocole B2C · QR Code",
+    "solution.p2.title": "Vos clients vérifient en 5 secondes.",
+    "solution.p2.body": "Un QR code unique par certification, scannable sur vitrine, comptoir, emballage ou fiche produit. Le consommateur accède en temps réel au statut, à l'organisme certificateur et à la date de validité — sans compte, sans téléchargement.",
+    "solution.p2.li1": "Page publique de vérification instantanée",
+    "solution.p2.li2": "Bascule automatique en « expiré » si la certif tombe",
+    "solution.p2.li3": "Statistiques de scans (volumes, géographie)",
+    "solution.p2.li4": "Brandé à votre marque, hébergé en Europe",
+    "dashboard.eyebrow": "À quoi ça ressemble",
+    "dashboard.title": "Votre conformité, <em class='serif'>à portée de regard.</em>",
+    "dashboard.lead": "Un tableau de bord clair, accessible depuis n'importe quel navigateur, qui montre à tout moment l'état exact de vos certifications et l'urgence réelle de chaque renouvellement.",
+    "mock.client": "Client · SAS Nour Import",
+    "mock.kpi1": "Certif. actives",
+    "mock.kpi2": "Alertes ouvertes",
+    "mock.kpi3": "Prochaine échéance",
+    "mock.cert1_meta": "Expire dans 14 jours · Grande Mosquée de Lyon",
+    "mock.cert2_meta": "Expire dans 59 jours · Ecocert Greenlife",
+    "mock.cert3_meta": "Valide · 287 jours restants",
+    "mock.cert4_meta": "Valide · 412 jours restants",
+    "mock.cert5_meta": "Valide · 1 203 jours restants",
+    "mock.qr.title": "QR public ARGML",
+    "mock.qr.sub": "Scannable par vos clients",
+    "mock.qr.status": "✓ Statut : valide · Maj temps réel",
+    "mock.pdf.title": "Rapport de conformité",
+    "mock.pdf.desc": "Export PDF signé, prêt à envoyer à vos acheteurs & auditeurs.",
+    "process.eyebrow": "Déploiement clés en main",
+    "process.title": "Opérationnel en <em class='serif'>4 jours.</em>",
+    "process.lead": "Aucune installation, aucune configuration côté client. Nos équipes déploient l'ensemble du système pendant que vous continuez votre activité.",
+    "process.1.title": "Audit & onboarding",
+    "process.1.body": "Formulaire de 10 minutes pour recenser vos certifications, dates d'expiration et contacts des organismes. Aucune compétence technique requise.",
+    "process.2.title": "Configuration & paramétrage",
+    "process.2.body": "Nos équipes configurent la surveillance, les alertes multicanales, le QR code de vérification et le rapport PDF personnalisé à votre logo.",
+    "process.3.title": "Mise en service",
+    "process.3.body": "Livraison de votre dashboard sécurisé, formation 20 minutes en visio, premières alertes actives. Support continu inclus.",
+    "certs.eyebrow": "Couverture",
+    "certs.title": "Toutes les certifications <em class='terra'>qui comptent pour votre marché.</em>",
+    "certs.lead": "Une taxonomie vivante, enrichie en continu. Un organisme n'est pas dans notre liste ? Nous l'intégrons sous 48 heures, sans surcoût.",
+    "certs.cat.halal_fr": "Halal France",
+    "certs.cat.halal_intl": "Halal Export",
+    "certs.cat.bio": "Bio alimentaire",
+    "certs.cat.cosmo": "Cosmétique",
+    "certs.cat.vegan": "Vegan · Éthique",
+    "certs.cat.textile": "Textile éthique",
+    "certs.cat.more": "+ 30 autres",
+    "certs.more_text": "Intégration sous 48h",
+    "regs.eyebrow": "Calendrier réglementaire",
+    "regs.title": "4 échéances qui vont <em class='terra'>tout changer.</em>",
+    "regs.lead": "Le paysage réglementaire de l'économie éthique se durcit partout à la fois. Ne laissez pas une deadline vous prendre de court.",
+    "regs.1.date": "🇪🇺 27 septembre 2026",
+    "regs.1.title": "Directive UE 2024/825 · EmpCo",
+    "regs.1.body": "Fin des allégations « écologique, vert, biodégradable, naturel » non substantiables. Les labels non certifiés par un tiers indépendant sont interdits. Impacte bio · naturel · vegan · éco-responsable.",
+    "regs.2.date": "🇮🇩 17 octobre 2026",
+    "regs.2.title": "BPJPH Indonésie · certification halal obligatoire",
+    "regs.2.body": "Certification halal obligatoire pour tous les produits F&B et cosmétiques importés. Certificats valides 4 ans, mise à jour exigée à chaque changement d'ingrédient ou fournisseur.",
+    "regs.3.date": "🇲🇾 Renouvellement 2 ans",
+    "regs.3.title": "JAKIM Malaysia · audits de surveillance",
+    "regs.3.body": "Certificats JAKIM valides 2 ans seulement. Audits de surveillance périodiques. Toute modification d'ingrédient, de fournisseur ou de process doit être déclarée avant implémentation.",
+    "regs.4.date": "🇫🇷 En vigueur · intensification",
+    "regs.4.title": "DGCCRF · pratiques commerciales trompeuses",
+    "regs.4.body": "2 356 amendes administratives en 2024, 3 447 transmissions au parquet. Une certification expirée mais affichée relève de l'art. L.121-1 du Code de la consommation.",
+    "excel.eyebrow": "La vraie comparaison",
+    "excel.title": "Vous suivez vos certifications dans Excel. <em class='terra'>Voici ce qu'Excel ne peut pas faire.</em>",
+    "excel.side1.title": "📊 Tableur Excel",
+    "excel.l1": "Ne vous alerte jamais d'une expiration imminente",
+    "excel.l2": "Ne vérifie pas si une certification a été suspendue entretemps",
+    "excel.l3": "Ne génère aucun rapport PDF signé à envoyer à vos acheteurs",
+    "excel.l4": "Ne propose aucune vérification publique à vos clients finaux",
+    "excel.l5": "Se dégrade à mesure que votre portefeuille grossit",
+    "excel.side2.title": "✦ CertTrack",
+    "excel.r1": "Alertes automatiques J-90, J-60, J-30, J-7 sur email + WhatsApp",
+    "excel.r2": "Vérification nocturne sur les listes publiques des organismes",
+    "excel.r3": "Rapport PDF à votre logo, généré en 1 clic",
+    "excel.r4": "QR code public pour vérification consommateur instantanée",
+    "excel.r5": "S'adapte sans frais à 5 ou 50 certifications",
+    "avatar.eyebrow": "À qui CertTrack s'adresse",
+    "avatar.title": "Trois profils. <em class='serif'>Le même enjeu.</em>",
+    "avatar.lead": "Profils représentatifs de notre cible. Si vous vous reconnaissez, vous êtes au bon endroit.",
+    "avatar.1.note": "Profil cible · importateur halal",
+    "avatar.1.name": "Karim · Fournisseur halal",
+    "avatar.1.role": "Importateur · 6 certifications actives",
+    "avatar.1.quote": "« J'ai failli perdre une livraison Ramadan parce que mon certificat ARGML était en renouvellement. Depuis, je veux une surveillance automatique que je ne peux pas oublier. »",
+    "avatar.2.note": "Profil cible · exportateur multi-marchés",
+    "avatar.2.name": "Mohamed · Exportateur halal",
+    "avatar.2.role": "Direction achats · 12 certifications multi-pays",
+    "avatar.2.quote": "« La deadline BPJPH d'octobre 2026 m'oblige à prouver la validité de mes certifications en permanence. Le rapport PDF envoyé à mes acheteurs est devenu un argument commercial. »",
+    "avatar.3.note": "Profil cible · marque cosméto bio/halal",
+    "avatar.3.name": "Samira · Fondatrice marque",
+    "avatar.3.role": "Cosmétique naturelle · 5 certifications",
+    "avatar.3.quote": "« Avec la directive UE qui arrive, mes allégations bio doivent être prouvées en permanence. Le QR code public sur chaque produit lève le doute avant même la question. »",
+    "magnet.eyebrow": "Ressource gratuite",
+    "magnet.title": "Le guide de renouvellement par organisme.",
+    "magnet.body": "Un PDF de 18 pages qui détaille, pour chaque organisme certificateur (ARGML, AVS, HMC, Ecocert, COSMOS, BPJPH, JAKIM), les pièces à joindre, les délais réels, les coûts constatés et les erreurs qui rallongent la procédure.",
+    "magnet.f1": "Checklist des pièces justificatives par organisme",
+    "magnet.f2": "Délais réels de traitement 2026",
+    "magnet.f3": "Coûts constatés et fourchettes budgétaires",
+    "magnet.f4": "Template de plan de renouvellement 90 jours",
+    "magnet.form.label": "Email professionnel",
+    "magnet.form.company": "Entreprise",
+    "magnet.form.consent": "J'accepte de recevoir le guide par email et des communications CertTrack. Désinscription en 1 clic. RGPD-compliant.",
+    "magnet.form.cta": "Recevoir le guide PDF",
+    "magnet.success.title": "✓ C'est parti.",
+    "magnet.success.body": "Le guide arrive dans votre boîte mail dans les minutes qui viennent. Pensez à vérifier vos spams.",
+    "faq.eyebrow": "Questions fréquentes",
+    "faq.title": "Tout ce que vous voulez <em class='serif'>savoir.</em>",
+    "faq.1.q": "Combien coûte CertTrack ?",
+    "faq.1.a": "Le tarif dépend du nombre de certifications surveillées, des canaux d'alerte activés et de la complexité de votre portefeuille (export, multi-entités, fournisseurs). Le prix est établi pendant l'audit gratuit de 20 minutes, en fonction de votre situation réelle. Nous ne vendons pas de pack générique.",
+    "faq.2.q": "En quoi CertTrack diffère d'un rappel Google Calendar ?",
+    "faq.2.a": "Un rappel calendrier ne vérifie pas si une certification a été réellement renouvelée. Il ne génère pas de rapport PDF à votre logo. Il ne s'envoie pas sur WhatsApp avec le guide de renouvellement de l'organisme concerné. Il ne produit pas de QR code scannable par vos clients. CertTrack n'est pas un rappel — c'est un système de conformité documentée.",
+    "faq.3.q": "Mes données sont-elles sécurisées ?",
+    "faq.3.a": "Hébergement 100 % européen (Hetzner Frankfurt). Chiffrement AES-256 au repos, TLS 1.3 en transit, conformité RGPD native. Historique documentaire immuable, exploitable en audit DGCCRF ou BPJPH. Export et suppression de données sur simple demande.",
+    "faq.4.q": "Un organisme n'est pas dans votre liste — est-ce bloquant ?",
+    "faq.4.a": "Notre taxonomie est vivante. Envoyez-nous le référentiel de l'organisme manquant et nous l'intégrons sous 48 heures ouvrées, sans surcoût pour vous ni pour les autres utilisateurs.",
+    "faq.5.q": "Comment se passe l'audit gratuit de 20 minutes ?",
+    "faq.5.a": "En visioconférence, nous passons en revue votre portefeuille de certifications, vos échéances connues, les incidents passés et les exigences de vos acheteurs. Nous calculons ensemble votre exposition réelle au risque, puis nous vous présentons la configuration CertTrack adaptée à votre situation. Aucun engagement à l'issue.",
+    "faq.6.q": "Puis-je intégrer CertTrack à mon ERP ou mon PIM ?",
+    "faq.6.a": "Oui. Une API REST et un connecteur natif permettent de synchroniser vos certifications avec SAP, Odoo, Akeneo, Shopify, WooCommerce et votre WMS. Les alertes peuvent déclencher automatiquement un blocage de commande côté système.",
+    "faq.7.q": "Qui est derrière CertTrack ?",
+    "faq.7.a": "CertTrack est édité par <strong>EthicalDataBoost</strong>, cabinet d'automatisation IA et data analytics dédié aux entreprises de l'économie éthique (halal, bio, naturel, vegan, éco-responsable). Tous les chiffres de cette page sont issus de sources primaires vérifiées (DGCCRF, IFOP, USDA FAS, Commission européenne).",
+    "final.title": "Si un acheteur vous demandait la preuve de conformité aujourd'hui — <em class='serif'>en combien de minutes pourriez-vous la fournir ?</em>",
+    "final.body": "Un audit de 20 minutes avec notre équipe pour cartographier votre risque, identifier les échéances critiques et définir la configuration CertTrack adaptée à votre activité.",
+    "footer.tagline2": "Halal · Bio · Naturel · Vegan · Éco-responsable",
+    "footer.brand_h": "Data Intelligence & Automatisation IA",
+    "footer.brand_desc": "Nous accompagnons les entreprises de l'économie éthique dans leur transformation data et leur automatisation par l'intelligence artificielle. Des solutions qui respectent les valeurs de votre marché.",
+    "footer.tab1": "Certifications surveillées",
+    "footer.tab2": "Nos solutions",
+    "footer.tab3": "Mentions légales",
+    "footer.tab4": "RGPD · IP · Sources",
+    "panel.certs.h": "Certifications surveillées par CertTrack",
+    "panel.sols.h": "Nos solutions EthicalDataBoost",
+    "panel.sols.col1_h": "Certifications & Conformité",
+    "panel.sols.col1": "CertTrack — surveillance automatisée halal, bio, vegan, éco-responsable. Veille Ramadan BI — prédictif saisonnier pour marchés éthiques.",
+    "panel.sols.col2_h": "E-commerce & Automatisation",
+    "panel.sols.col2": "RecoverFlow — paniers abandonnés. LoyalLoop — post-achat. AbandonIntel — rapport data mensuel. PilotBoard — dashboard BI unifié.",
+    "panel.sols.col3_h": "Géographie",
+    "panel.sols.col3": "France · International.",
+    "panel.legal.h": "Mentions légales",
+    "panel.rgpd.h": "RGPD · Propriété intellectuelle · Sources",
+    "footer.made": "Hébergé en Europe · RGPD compliant"
+  },
+  en: {
+    "meta.title": "CertTrack — Smart monitoring for halal, organic & ethical certifications · EthicalDataBoost",
+    "meta.description": "In an ethical market shaken by fraud and consumer distrust, a valid, verifiable certification is your only undisputable argument.",
+    "announce": "<strong>2026 Regulatory Deadlines</strong><span class='dot'></span>EU Directive 2024/825 · Sept 27, 2026<span class='dot'></span>BPJPH Indonesia · Oct 17, 2026",
+    "nav.crisis": "The reality",
+    "nav.solution": "The solution",
+    "nav.dashboard": "Dashboard",
+    "nav.regulations": "Regulations",
+    "nav.see_demo": "See the dashboard",
+    "cta.audit_short": "Free audit · 20 min",
+    "cta.audit_full": "Book the free audit",
+    "cta.see_dashboard": "See the dashboard",
+    "cta.write": "Write to us",
+    "hero.eyebrow": "Halal · Organic · Vegan · Natural cosmetics",
+    "hero.title": "Your customers want to know.<br/>They can't <em class='serif'>verify</em>.<br/>You can change that.",
+    "hero.subtitle": "In an ethical market where 15 years of documented fraud have installed distrust, a valid and verifiable certification is your only undisputable commercial argument. CertTrack monitors every deadline, documents every renewal, and makes your certifications scannable in 5 seconds by your customers.",
+    "hero.proof": "Turnkey deployment in 4 days · No software to install, no technical team required",
+    "calc.eyebrow": "Risk calculator",
+    "calc.title": "What an expired certification really costs you.",
+    "calc.sub": "Instant estimate · 4 real cost categories · no sign-up required.",
+    "calc.field.ca": "Your monthly revenue (€)",
+    "calc.field.type": "Primary certification type",
+    "calc.field.count": "Number of active certifications",
+    "calc.field.expo": "Share of revenue from certified products (%)",
+    "calc.opt.halal_fr": "Halal France (ARGML / AVS / HMC)",
+    "calc.opt.bio": "Organic / Natural (Ecocert / COSMOS)",
+    "calc.opt.halal_id": "Halal export Indonesia (BPJPH)",
+    "calc.opt.halal_my": "Halal export Malaysia (JAKIM)",
+    "calc.opt.vegan": "Vegan (V-Label)",
+    "calc.opt.multi": "Multi-certifications (≥ 4)",
+    "calc.result.label": "Estimated risk exposure",
+    "calc.disclaimer": "Estimate based on 3 months of average unavailability · Sources: French DGCCRF, B2B contractual practices, re-certification costs documented at ARGML/Ecocert/BPJPH.",
+    "crisis.eyebrow": "The reality · sourced data",
+    "crisis.title": "Consumers doubt. Regulators doubt. <em class='serif'>Valid certifications matter more than ever.</em>",
+    "crisis.stat1": "of Muslim consumers rely only on the \"halal\" label without verifying.",
+    "crisis.stat1_src": "IFOP · reported by Al-Kanz (2022)",
+    "crisis.stat2": "of environmental claims in the EU are vague, misleading or unsubstantiated.",
+    "crisis.stat2_src": "European Commission · Directive 2024/825",
+    "crisis.stat3": "administrative fines issued by DGCCRF in 2024, on 64,979 establishments audited.",
+    "crisis.stat3_src": "DGCCRF · 2024 Report (economie.gouv.fr)",
+    "crisis.stat4": "of products in Indonesian supermarkets still don't meet BPJPH requirements.",
+    "crisis.stat4_src": "USDA FAS · Indonesia 2025",
+    "costs.eyebrow": "What it really costs",
+    "costs.title": "4 cost categories <em class='terra'>nobody sees coming.</em>",
+    "costs.lead": "An expired certification is never just a renewal task. Here's what your competitors learned the hard way.",
+    "costs.1.title": "Blocked revenue",
+    "costs.1.body": "Your B2B orders stop immediately once your buyer detects an expired certification. The loss is proportional to your dependence on certified products.",
+    "costs.2.title": "Re-certification fees",
+    "costs.2.body": "ARGML / AVS: €800 to €2,500 · Ecocert COSMOS: €500 to €3,000 · BPJPH: LPH audit + SIHALAL re-submission. Processing time: 3 to 26 weeks depending on the body.",
+    "costs.3.title": "Non-compliant inventory",
+    "costs.3.body": "Destruction or massive re-labeling. EU Directive 2024/825 bans any \"organic / natural / vegan\" claim that cannot be substantiated at the time of inspection from September 27, 2026.",
+    "costs.4.title": "Contractual penalties",
+    "costs.4.body": "B2B retailers: penalties up to 1% of annual revenue. Product recall: up to €600,000 fine + 10% of revenue + 5 years imprisonment (EU GPSR in force).",
+    "solution.eyebrow": "The CertTrack solution",
+    "solution.title": "Two protocols. <em class='serif'>One tool.</em>",
+    "solution.lead": "Because a certification serves to reassure a B2B buyer as much as to convince a consumer in-store, CertTrack operates on both fronts simultaneously.",
+    "solution.p1.badge": "B2B Protocol · Alerts",
+    "solution.p1.title": "Continuous monitoring of your deadlines.",
+    "solution.p1.body": "Every night, our automated workflows check the validity of your certifications and trigger alerts at predefined thresholds. You and your team receive the right information, at the right moment, through the right channel.",
+    "solution.p1.li1": "Multi-channel alerts D-90, D-60, D-30, D-7",
+    "solution.p1.li2": "Email + WhatsApp Business + Slack integrated",
+    "solution.p1.li3": "Renewal guide for each certification body",
+    "solution.p1.li4": "Compliance PDF report with your logo",
+    "solution.p2.badge": "B2C Protocol · QR Code",
+    "solution.p2.title": "Your customers verify in 5 seconds.",
+    "solution.p2.body": "A unique QR code per certification, scannable on storefront, counter, packaging or product page. The consumer accesses in real time the status, the certifying body and the validity date — no account, no download.",
+    "solution.p2.li1": "Public verification page, instant access",
+    "solution.p2.li2": "Auto-switch to \"expired\" if the cert lapses",
+    "solution.p2.li3": "Scan analytics (volumes, geography)",
+    "solution.p2.li4": "Branded to your company, hosted in Europe",
+    "dashboard.eyebrow": "What it looks like",
+    "dashboard.title": "Your compliance, <em class='serif'>at a glance.</em>",
+    "dashboard.lead": "A clear dashboard, accessible from any browser, showing at any moment the exact state of your certifications and the real urgency of each renewal.",
+    "mock.client": "Client · Nour Import Ltd.",
+    "mock.kpi1": "Active certs",
+    "mock.kpi2": "Open alerts",
+    "mock.kpi3": "Next deadline",
+    "mock.cert1_meta": "Expires in 14 days · Grande Mosquée de Lyon",
+    "mock.cert2_meta": "Expires in 59 days · Ecocert Greenlife",
+    "mock.cert3_meta": "Valid · 287 days remaining",
+    "mock.cert4_meta": "Valid · 412 days remaining",
+    "mock.cert5_meta": "Valid · 1,203 days remaining",
+    "mock.qr.title": "ARGML public QR",
+    "mock.qr.sub": "Scannable by your customers",
+    "mock.qr.status": "✓ Status: valid · Real-time update",
+    "mock.pdf.title": "Compliance report",
+    "mock.pdf.desc": "Signed PDF export, ready to send to your buyers & auditors.",
+    "process.eyebrow": "Turnkey deployment",
+    "process.title": "Operational in <em class='serif'>4 days.</em>",
+    "process.lead": "No installation, no configuration on your side. Our team deploys the entire system while you keep running your business.",
+    "process.1.title": "Audit & onboarding",
+    "process.1.body": "10-minute form to list your certifications, expiration dates and certification body contacts. No technical skill required.",
+    "process.2.title": "Configuration & setup",
+    "process.2.body": "Our team configures the monitoring, multi-channel alerts, verification QR code and branded PDF report.",
+    "process.3.title": "Go-live",
+    "process.3.body": "Delivery of your secure dashboard, 20-minute video training, first alerts active. Ongoing support included.",
+    "certs.eyebrow": "Coverage",
+    "certs.title": "All certifications <em class='terra'>that matter for your market.</em>",
+    "certs.lead": "A living taxonomy, continuously enriched. A certification body isn't in our list? We integrate it within 48 hours, at no additional cost.",
+    "certs.cat.halal_fr": "Halal France",
+    "certs.cat.halal_intl": "Halal Export",
+    "certs.cat.bio": "Organic food",
+    "certs.cat.cosmo": "Cosmetics",
+    "certs.cat.vegan": "Vegan · Ethical",
+    "certs.cat.textile": "Ethical textile",
+    "certs.cat.more": "+ 30 others",
+    "certs.more_text": "48h integration",
+    "regs.eyebrow": "Regulatory calendar",
+    "regs.title": "4 deadlines that will <em class='terra'>change everything.</em>",
+    "regs.lead": "The regulatory landscape for the ethical economy is tightening everywhere at once. Don't let a deadline catch you off guard.",
+    "regs.1.date": "🇪🇺 September 27, 2026",
+    "regs.1.title": "EU Directive 2024/825 · EmpCo",
+    "regs.1.body": "End of unsubstantiated \"eco-friendly, green, biodegradable, natural\" claims. Labels not certified by an independent third party are banned. Impacts organic · natural · vegan · eco-friendly claims.",
+    "regs.2.date": "🇮🇩 October 17, 2026",
+    "regs.2.title": "BPJPH Indonesia · mandatory halal certification",
+    "regs.2.body": "Mandatory halal certification for all imported F&B and cosmetic products. Certificates valid 4 years, update required at every ingredient or supplier change.",
+    "regs.3.date": "🇲🇾 2-year renewal",
+    "regs.3.title": "JAKIM Malaysia · surveillance audits",
+    "regs.3.body": "JAKIM certificates valid for 2 years only. Periodic surveillance audits. Any ingredient, supplier or process change must be declared before implementation.",
+    "regs.4.date": "🇫🇷 In force · intensifying",
+    "regs.4.title": "DGCCRF · misleading commercial practices",
+    "regs.4.body": "2,356 administrative fines in 2024, 3,447 referrals to the prosecutor. An expired but still displayed certification falls under art. L.121-1 of the French Consumer Code.",
+    "excel.eyebrow": "The real comparison",
+    "excel.title": "You track your certifications in Excel. <em class='terra'>Here's what Excel cannot do.</em>",
+    "excel.side1.title": "📊 Excel spreadsheet",
+    "excel.l1": "Never alerts you of an upcoming expiration",
+    "excel.l2": "Doesn't check whether a certification was suspended in the meantime",
+    "excel.l3": "Generates no signed PDF report to send to your buyers",
+    "excel.l4": "Offers no public verification to your end customers",
+    "excel.l5": "Degrades as your portfolio grows",
+    "excel.side2.title": "✦ CertTrack",
+    "excel.r1": "Automatic alerts D-90, D-60, D-30, D-7 by email + WhatsApp",
+    "excel.r2": "Nightly verification against public lists of certification bodies",
+    "excel.r3": "Branded PDF report, generated in one click",
+    "excel.r4": "Public QR code for instant consumer verification",
+    "excel.r5": "Scales without cost from 5 to 50 certifications",
+    "avatar.eyebrow": "Who CertTrack is for",
+    "avatar.title": "Three profiles. <em class='serif'>The same stake.</em>",
+    "avatar.lead": "Representative profiles of our target. If you recognize yourself, you're in the right place.",
+    "avatar.1.note": "Target profile · halal importer",
+    "avatar.1.name": "Karim · Halal supplier",
+    "avatar.1.role": "Importer · 6 active certifications",
+    "avatar.1.quote": "\"I almost missed a Ramadan delivery because my ARGML certificate was being renewed. Since then, I want automatic monitoring I can't forget.\"",
+    "avatar.2.note": "Target profile · multi-market exporter",
+    "avatar.2.name": "Mohamed · Halal exporter",
+    "avatar.2.role": "Purchasing director · 12 multi-country certifications",
+    "avatar.2.quote": "\"The BPJPH deadline of October 2026 forces me to prove my certifications are valid at all times. The PDF report sent to my buyers has become a commercial argument.\"",
+    "avatar.3.note": "Target profile · cosmetics brand",
+    "avatar.3.name": "Samira · Brand founder",
+    "avatar.3.role": "Natural cosmetics · 5 certifications",
+    "avatar.3.quote": "\"With the EU Directive coming, my organic claims must be provable at all times. The public QR code on every product removes doubt before the question is even asked.\"",
+    "magnet.eyebrow": "Free resource",
+    "magnet.title": "The per-certification-body renewal guide.",
+    "magnet.body": "An 18-page PDF detailing, for each certification body (ARGML, AVS, HMC, Ecocert, COSMOS, BPJPH, JAKIM), the documents required, actual lead times, documented costs and the common mistakes that slow down the process.",
+    "magnet.f1": "Document checklist per certification body",
+    "magnet.f2": "Actual 2026 processing times",
+    "magnet.f3": "Documented costs and budget ranges",
+    "magnet.f4": "90-day renewal plan template",
+    "magnet.form.label": "Business email",
+    "magnet.form.company": "Company",
+    "magnet.form.consent": "I agree to receive the guide by email and communications from CertTrack. Unsubscribe in 1 click. GDPR-compliant.",
+    "magnet.form.cta": "Get the PDF guide",
+    "magnet.success.title": "✓ You're all set.",
+    "magnet.success.body": "The guide will arrive in your inbox within minutes. Please check your spam folder just in case.",
+    "faq.eyebrow": "Frequently asked questions",
+    "faq.title": "Everything you might <em class='serif'>ask.</em>",
+    "faq.1.q": "How much does CertTrack cost?",
+    "faq.1.a": "Pricing depends on the number of certifications monitored, the alert channels activated, and the complexity of your portfolio (export, multi-entities, suppliers). The price is set during the free 20-minute audit, based on your actual situation. We don't sell generic packages.",
+    "faq.2.q": "How is CertTrack different from a Google Calendar reminder?",
+    "faq.2.a": "A calendar reminder doesn't verify whether a certification was actually renewed. It doesn't generate a branded PDF report. It doesn't send WhatsApp messages with the renewal guide of the relevant body. It doesn't produce a scannable QR code for your customers. CertTrack is not a reminder — it's a documented compliance system.",
+    "faq.3.q": "Is my data secure?",
+    "faq.3.a": "100% European hosting (Hetzner Frankfurt). AES-256 encryption at rest, TLS 1.3 in transit, native GDPR compliance. Immutable document history, usable for DGCCRF or BPJPH audits. Data export and deletion on simple request.",
+    "faq.4.q": "A certification body isn't in your list — is that blocking?",
+    "faq.4.a": "Our taxonomy is living. Send us the standard of the missing body and we'll integrate it within 48 business hours, at no additional cost to you or to other users.",
+    "faq.5.q": "How does the free 20-minute audit work?",
+    "faq.5.a": "By video call, we review your certification portfolio, known deadlines, past incidents, and your buyers' requirements. Together we calculate your real risk exposure, then we present the CertTrack configuration adapted to your situation. No commitment.",
+    "faq.6.q": "Can I integrate CertTrack with my ERP or PIM?",
+    "faq.6.a": "Yes. A REST API and a native connector allow you to synchronize your certifications with SAP, Odoo, Akeneo, Shopify, WooCommerce and your WMS. Alerts can automatically trigger an order block in your system.",
+    "faq.7.q": "Who's behind CertTrack?",
+    "faq.7.a": "CertTrack is published by <strong>EthicalDataBoost</strong>, an AI automation and data analytics firm dedicated to companies in the ethical economy (halal, organic, natural, vegan, eco-friendly). All figures on this page come from primary verified sources (DGCCRF, IFOP, USDA FAS, European Commission).",
+    "final.title": "If a buyer asked for proof of compliance today — <em class='serif'>in how many minutes could you provide it?</em>",
+    "final.body": "A 20-minute audit with our team to map your risk, identify critical deadlines and define the CertTrack configuration adapted to your activity.",
+    "footer.tagline2": "Halal · Organic · Natural · Vegan · Eco-friendly",
+    "footer.brand_h": "Data Intelligence & AI Automation",
+    "footer.brand_desc": "We support companies in the ethical economy through their data transformation and AI automation journey. Solutions that respect the values of your market.",
+    "footer.tab1": "Monitored certifications",
+    "footer.tab2": "Our solutions",
+    "footer.tab3": "Legal",
+    "footer.tab4": "GDPR · IP · Sources",
+    "panel.certs.h": "Certifications monitored by CertTrack",
+    "panel.sols.h": "Our EthicalDataBoost solutions",
+    "panel.sols.col1_h": "Certifications & Compliance",
+    "panel.sols.col1": "CertTrack — automated monitoring of halal, organic, vegan, eco-friendly certifications. Ramadan BI — seasonal forecasting for ethical markets.",
+    "panel.sols.col2_h": "E-commerce & Automation",
+    "panel.sols.col2": "RecoverFlow — abandoned carts. LoyalLoop — post-purchase. AbandonIntel — monthly data report. PilotBoard — unified BI dashboard.",
+    "panel.sols.col3_h": "Geography",
+    "panel.sols.col3": "France · International.",
+    "panel.legal.h": "Legal notice",
+    "panel.rgpd.h": "GDPR · IP · Sources",
+    "footer.made": "Hosted in Europe · GDPR compliant"
+  }
+};
+
+function setLang(lang) {
+  document.documentElement.lang = lang;
+  document.documentElement.setAttribute('data-lang', lang);
+  const dict = i18n[lang];
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (dict[key] !== undefined) {
+      if (el.tagName === 'META') el.setAttribute('content', dict[key]);
+      else if (el.tagName === 'TITLE') el.textContent = dict[key];
+      else if (el.tagName === 'INPUT' && el.hasAttribute('placeholder')) el.setAttribute('placeholder', dict[key]);
+      else el.innerHTML = dict[key];
+    }
+  });
+
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.lang === lang);
+  });
+
+  try { localStorage.setItem('certtrack_lang', lang); } catch(e) {}
+  pushEvent('lang_toggle', { lang: lang });
+}
+
+// Language init
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => setLang(btn.dataset.lang));
+});
+
+// Respect URL param or stored pref
+const urlLang = new URLSearchParams(location.search).get('lang');
+const storedLang = (function(){ try { return localStorage.getItem('certtrack_lang'); } catch(e){ return null; } })();
+const initLang = urlLang || storedLang || (navigator.language && navigator.language.startsWith('en') ? 'en' : 'fr');
+setLang(initLang);
+
+// ============================================================
+// GTM / GA4 event helper
+// ============================================================
+function pushEvent(name, params = {}) {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: name, ...params });
+  if (typeof gtag === 'function') {
+    gtag('event', name, params);
+  }
+}
+
+// Initial page view event
+pushEvent('page_view_certtrack', { page_version: 'v2-2026' });
+
+// ============================================================
+// GTM — click tracking on all [data-gtm] elements
+// ============================================================
+document.querySelectorAll('[data-gtm]').forEach(el => {
+  el.addEventListener('click', (e) => {
+    const eventName = el.getAttribute('data-gtm');
+    const position = el.getAttribute('data-cta-position') || el.closest('section')?.id || 'unknown';
+    const label = (el.innerText || el.textContent || '').trim().slice(0, 60);
+    pushEvent(eventName, {
+      cta_position: position,
+      cta_label: label,
+      link_url: el.href || null
+    });
+  });
+});
+
+// ============================================================
+// Scroll depth (25 / 50 / 75 / 90 / 100)
+// ============================================================
+const scrollDepths = [25, 50, 75, 90, 100];
+const firedDepths = new Set();
+const progressBar = document.getElementById('progress-bar');
+const backTop = document.getElementById('back-top');
+
+window.addEventListener('scroll', () => {
+  const scrollable = document.body.scrollHeight - window.innerHeight;
+  const percent = Math.round((window.scrollY / scrollable) * 100);
+  if (progressBar) progressBar.style.width = percent + '%';
+  if (backTop) backTop.classList.toggle('show', window.scrollY > 600);
+
+  scrollDepths.forEach(d => {
+    if (percent >= d && !firedDepths.has(d)) {
+      firedDepths.add(d);
+      pushEvent('scroll_depth', { depth_pct: d });
+    }
+  });
+}, { passive: true });
+
+// Back to top
+document.getElementById('back-top')?.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// ============================================================
+// Section view tracking (IntersectionObserver)
+// ============================================================
+const seenSections = new Set();
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
+      const id = entry.target.id;
+      if (id && !seenSections.has(id)) {
+        seenSections.add(id);
+        pushEvent('section_view', { section_id: id });
+      }
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('section[id]').forEach(s => sectionObserver.observe(s));
+
+// ============================================================
+// Time on page milestones
+// ============================================================
+setTimeout(() => pushEvent('time_on_page_30s'), 30000);
+setTimeout(() => pushEvent('time_on_page_90s'), 90000);
+setTimeout(() => pushEvent('time_on_page_3min'), 180000);
+
+// ============================================================
+// Outbound link tracking
+// ============================================================
+document.querySelectorAll('a[target="_blank"]').forEach(a => {
+  if (!a.hasAttribute('data-gtm')) {
+    a.addEventListener('click', () => {
+      pushEvent('outbound_click', { link_url: a.href });
+    });
+  }
+});
+
+// Mailto tracking (already captured via data-gtm, but as safety net)
+document.querySelectorAll('a[href^="mailto:"]').forEach(a => {
+  if (!a.hasAttribute('data-gtm')) {
+    a.addEventListener('click', () => {
+      pushEvent('mailto_click', { link_url: a.href });
+    });
+  }
+});
+
+// ============================================================
+// Risk Calculator
+// ============================================================
+const calcCa = document.getElementById('calc-ca');
+const calcType = document.getElementById('calc-cert-type');
+const calcCount = document.getElementById('calc-count');
+const calcExpo = document.getElementById('calc-expo');
+const calcTotal = document.getElementById('calc-total');
+const expoVal = document.getElementById('expo-val');
+
+// Typical re-certification cost by type (€)
+const recertCost = {
+  halal_fr: 1800,
+  bio: 2200,
+  halal_id: 3500,
+  halal_my: 2800,
+  vegan: 900,
+  multi: 2500
+};
+
+// Typical unavailability factor (3 months blocked business)
+function computeRisk() {
+  const ca = parseFloat(calcCa.value) || 0;
+  const type = calcType.value;
+  const count = parseInt(calcCount.value) || 1;
+  const expo = parseInt(calcExpo.value) || 60;
+  if (expoVal) expoVal.textContent = expo + '%';
+
+  if (ca <= 0) {
+    calcTotal.textContent = '—';
+    return;
+  }
+
+  // 3 months of blocked revenue × exposure
+  const blockedCA = ca * 3 * (expo / 100);
+  // Re-certification cost × certifications to renew simultaneously
+  const recert = recertCost[type] * Math.min(count, 3);
+  // Stock re-labeling/destruction ~15% of monthly CA × expo
+  const stock = ca * 0.15 * (expo / 100);
+  // Contractual penalty ~1% of annual CA
+  const penalty = ca * 12 * 0.01 * (expo / 100);
+
+  const total = Math.round(blockedCA + recert + stock + penalty);
+  calcTotal.textContent = total.toLocaleString('fr-FR') + ' €';
+
+  // Fire event only when enough data is entered
+  if (ca > 1000) {
+    pushEvent('calc_completed', {
+      calc_ca: ca,
+      calc_type: type,
+      calc_count: count,
+      calc_expo: expo,
+      calc_total: total
+    });
+  }
+}
+
+// Debounce for inputs
+let calcTimeout;
+[calcCa, calcType, calcCount, calcExpo].forEach(el => {
+  if (!el) return;
+  el.addEventListener('input', () => {
+    clearTimeout(calcTimeout);
+    calcTimeout = setTimeout(computeRisk, 400);
+  });
+  el.addEventListener('change', computeRisk);
+});
+
+// ============================================================
+// Lead Magnet form
+// ============================================================
+const magnetForm = document.getElementById('magnet-form');
+const magnetSuccess = document.getElementById('magnet-success');
+
+magnetForm?.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const email = document.getElementById('magnet-email').value.trim();
+  const company = document.getElementById('magnet-company').value.trim();
+  const consent = document.getElementById('magnet-consent').checked;
+
+  if (!email || !company || !consent) return;
+
+  const emailDomain = email.split('@')[1] || '';
+  pushEvent('email_capture', {
+    lead_source: 'magnet_pdf_guide',
+    email_domain: emailDomain,
+    company: company
+  });
+
+  // TODO: connect to Brevo / Make / n8n webhook
+  // Example:
+  // await fetch('https://hook.ethicaldataboost.com/lead-magnet', {
+  //   method: 'POST',
+  //   headers: {'Content-Type': 'application/json'},
+  //   body: JSON.stringify({ email, company, source: 'certtrack_landing_magnet' })
+  // });
+
+  magnetForm.style.display = 'none';
+  magnetSuccess.classList.add('show');
+  magnetSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+
+// ============================================================
+// Footer tabs
+// ============================================================
+document.querySelectorAll('.footer-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = tab.dataset.tab;
+    document.querySelectorAll('.footer-tab').forEach(t => t.classList.toggle('active', t === tab));
+    document.querySelectorAll('.footer-panel').forEach(p => {
+      p.classList.toggle('active', p.id === 'panel-' + target);
+    });
+    pushEvent('footer_tab_click', { tab_id: target });
+  });
+});
+
+// ============================================================
+// Mobile nav
+// ============================================================
+const mobileNav = document.getElementById('mobile-nav');
+const mobileToggle = document.getElementById('mobile-toggle');
+const mobileClose = document.getElementById('mobile-close');
+
+mobileToggle?.addEventListener('click', () => mobileNav.classList.add('open'));
+mobileClose?.addEventListener('click', () => mobileNav.classList.remove('open'));
+document.querySelectorAll('#mobile-nav a').forEach(a => {
+  a.addEventListener('click', () => mobileNav.classList.remove('open'));
+});
+
+// ============================================================
+// QR demo interaction
+// ============================================================
+document.querySelector('.mock-qr-svg')?.addEventListener('click', () => {
+  pushEvent('qr_demo_click');
+});
+</script>
+
+</body>
+</html>
