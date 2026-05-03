@@ -2958,5 +2958,234 @@ document.querySelector('.mock-qr-svg')?.addEventListener('click', () => {
 });
 </script>
 
+<!--
+=============================================================================
+CertTrack · LANDING · Patch tracking GTM/GA4 complet
+=============================================================================
+Ce bloc complète le tracking déjà en place dans index.html.
+
+À AJOUTER : juste avant la balise </body> de fermeture de ta landing,
+APRÈS le bloc <script> existant qui contient pushEvent() et computeRisk().
+
+NE PAS REMPLACER le code existant — juste l'ajouter en complément.
+
+Events ajoutés par ce patch :
+- form_start : premier focus sur un champ du formulaire lead magnet
+- form_error : tentative de soumission avec champ manquant ou invalide
+- faq_open : ouverture d'une question FAQ (avec libellé)
+- calc_start : premier interaction avec le calculateur
+- cta_visible : CTA principal entré dans le viewport (intent-to-click)
+- email_field_typed : email saisi (sans capture du contenu, RGPD-compliant)
+- avatar_match : prospect a cliqué un profil avatar correspondant
+
+Tag GTM-T87PC6C3 · GA4 G-L5WX1QW4R8
+=============================================================================
+-->
+
+<script>
+(function() {
+  'use strict';
+
+  // Helper safe push (au cas où pushEvent n'existe pas encore)
+  function safePush(name, params) {
+    if (typeof pushEvent === 'function') {
+      pushEvent(name, params || {});
+    } else if (window.dataLayer) {
+      window.dataLayer.push(Object.assign({ event: name }, params || {}));
+    }
+  }
+
+  // ============================================================
+  // 1 · FORM ENGAGEMENT TRACKING
+  // ============================================================
+  const magnetForm = document.getElementById('magnet-form');
+  if (magnetForm) {
+    let formStarted = false;
+    let formFieldsInteracted = new Set();
+
+    // Premier focus = form_start
+    magnetForm.querySelectorAll('input, textarea').forEach(field => {
+      field.addEventListener('focus', function() {
+        if (!formStarted) {
+          formStarted = true;
+          safePush('form_start', {
+            form_id: 'lead_magnet',
+            form_location: 'landing'
+          });
+        }
+        formFieldsInteracted.add(this.name || this.id);
+      }, { once: false });
+    });
+
+    // Validation échouée = form_error
+    magnetForm.addEventListener('submit', function(e) {
+      const email = document.getElementById('magnet-email');
+      const company = document.getElementById('magnet-company');
+      const consent = document.getElementById('magnet-consent');
+      let errors = [];
+
+      if (!email.value || !email.checkValidity()) errors.push('email_invalid');
+      if (!company.value || company.value.length < 2) errors.push('company_missing');
+      if (!consent.checked) errors.push('consent_missing');
+
+      if (errors.length > 0) {
+        safePush('form_error', {
+          form_id: 'lead_magnet',
+          error_types: errors.join(','),
+          fields_interacted: Array.from(formFieldsInteracted).join(',')
+        });
+      }
+    }, true);
+
+    // Email valide saisi (sans capture du contenu)
+    const emailField = document.getElementById('magnet-email');
+    if (emailField) {
+      let emailValid = false;
+      emailField.addEventListener('blur', function() {
+        const isValid = this.value && this.checkValidity();
+        if (isValid && !emailValid) {
+          emailValid = true;
+          const domain = this.value.split('@')[1] || 'unknown';
+          safePush('email_field_filled', {
+            email_domain: domain,
+            form_id: 'lead_magnet'
+          });
+        }
+      });
+    }
+  }
+
+  // ============================================================
+  // 2 · FAQ OPENING TRACKING
+  // ============================================================
+  document.querySelectorAll('details.faq').forEach((faq, index) => {
+    faq.addEventListener('toggle', function() {
+      if (this.open) {
+        const summaryEl = this.querySelector('summary');
+        const questionText = summaryEl ? (summaryEl.textContent || '').trim().slice(0, 80) : 'unknown';
+        safePush('faq_open', {
+          faq_index: index + 1,
+          faq_question: questionText
+        });
+      }
+    });
+  });
+
+  // ============================================================
+  // 3 · CALCULATOR ENGAGEMENT TRACKING
+  // ============================================================
+  const calcInputs = document.querySelectorAll('#calc input, #calc select');
+  let calcStarted = false;
+  calcInputs.forEach(input => {
+    input.addEventListener('focus', function() {
+      if (!calcStarted) {
+        calcStarted = true;
+        safePush('calculator_start', {
+          calculator_id: 'risk_calculator',
+          first_field: this.id || this.name
+        });
+      }
+    });
+  });
+
+  // ============================================================
+  // 4 · CTA VISIBILITY TRACKING (intent-to-click signal)
+  // ============================================================
+  const primaryCTAs = document.querySelectorAll('[data-gtm="click_audit"]');
+  const ctaVisibleSet = new Set();
+  if ('IntersectionObserver' in window) {
+    const ctaObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+          const position = entry.target.getAttribute('data-cta-position') || 'unknown';
+          if (!ctaVisibleSet.has(position)) {
+            ctaVisibleSet.add(position);
+            safePush('cta_visible', {
+              cta_position: position,
+              cta_label: (entry.target.textContent || '').trim().slice(0, 40)
+            });
+          }
+        }
+      });
+    }, { threshold: 0.5 });
+
+    primaryCTAs.forEach(cta => ctaObserver.observe(cta));
+  }
+
+  // ============================================================
+  // 5 · AVATAR PROFILE INTERACTION
+  // ============================================================
+  document.querySelectorAll('.avatar-card').forEach((card, index) => {
+    card.addEventListener('click', function() {
+      const nameEl = this.querySelector('h4');
+      const profileName = nameEl ? (nameEl.textContent || '').trim() : 'avatar_' + (index + 1);
+      safePush('avatar_match', {
+        avatar_index: index + 1,
+        avatar_name: profileName
+      });
+    });
+    card.style.cursor = 'pointer';
+  });
+
+  // ============================================================
+  // 6 · EXIT INTENT (desktop only)
+  // ============================================================
+  let exitFired = false;
+  document.addEventListener('mouseleave', function(e) {
+    if (e.clientY < 10 && !exitFired && window.innerWidth > 768) {
+      exitFired = true;
+      safePush('exit_intent', {
+        time_on_page_sec: Math.round(performance.now() / 1000),
+        scroll_pct: Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100)
+      });
+    }
+  });
+
+  // ============================================================
+  // 7 · UTM CAPTURE & ATTRIBUTION
+  // ============================================================
+  const params = new URLSearchParams(window.location.search);
+  const utmData = {
+    utm_source: params.get('utm_source') || (document.referrer ? new URL(document.referrer).hostname : 'direct'),
+    utm_medium: params.get('utm_medium') || (document.referrer ? 'referral' : 'organic'),
+    utm_campaign: params.get('utm_campaign') || 'none',
+    utm_content: params.get('utm_content') || 'none',
+    utm_term: params.get('utm_term') || 'none',
+    landing_page: window.location.pathname,
+    referrer_full: document.referrer || 'none'
+  };
+
+  // Push attribution at start
+  safePush('attribution_loaded', utmData);
+
+  // Store for later use (form submission)
+  try {
+    sessionStorage.setItem('certtrack_utm', JSON.stringify(utmData));
+  } catch(e) {}
+
+  // ============================================================
+  // 8 · INJECT UTM INTO ALL CALENDLY LINKS
+  // ============================================================
+  function appendUTMToCalendlyLinks() {
+    const calendlyLinks = document.querySelectorAll('a[href*="calendly.com"]');
+    calendlyLinks.forEach(link => {
+      const url = new URL(link.href);
+      // Only add if not already present
+      if (!url.searchParams.has('utm_source')) {
+        url.searchParams.set('utm_source', utmData.utm_source);
+        url.searchParams.set('utm_medium', utmData.utm_medium);
+        url.searchParams.set('utm_campaign', utmData.utm_campaign);
+        url.searchParams.set('utm_content', link.getAttribute('data-cta-position') || 'unknown');
+        link.href = url.toString();
+      }
+    });
+  }
+  appendUTMToCalendlyLinks();
+
+})();
+</script>
+
+
+
 </body>
 </html>
